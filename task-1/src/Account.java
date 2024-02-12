@@ -37,8 +37,9 @@ public class Account {
                 '}';
     }
 
-    public String display() {
-
+    public void display() {
+        System.out.printf("Name: %s %s\nBalance: %.2fPLN\nAccount number: %s%n",
+                            name, surname, balance, accountNumber);
     }
 
     public void increaseBalance (double amountToIncrease) {
