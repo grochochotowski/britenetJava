@@ -53,4 +53,8 @@ public class Employee {
         };
         return String.format("Name: %s %s\nPESEL: %s\nOccupation: %s\nSalary: %.2fPLN\nExperience: %s", name, surname, PESEL, occupation, salary, experience);
     }
+
+    public void giveRise(double rise) {
+        setSalary(salary + rise);
+    }
 }
