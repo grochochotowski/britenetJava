@@ -9,14 +9,7 @@ public class Employee {
     private int experienceStage;
 
     // Constructors
-    public Employee() {
-        this.name = "";
-        this.surname = "";
-        this.PESEL = "";
-        this.occupation = "";
-        this.salary = 0.0;
-        this.experienceStage = -1;
-    }
+    public Employee() { }
     public Employee(String name, String surname, String PESEL, String occupation, double salary, int experienceStage) {
         this.name = name;
         this.surname = surname;
