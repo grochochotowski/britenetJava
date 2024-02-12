@@ -47,7 +47,7 @@ public class Account {
         double tempBalance = getBalance();
         tempBalance -= amountToDecrease;
         if (tempBalance < 0) {
-            System.out.printf("ERROR - negative balance: %.2fPLN", tempBalance);
+            System.out.printf("ERROR - cannot decrease balance to negative: %.2fPLN for %s %s\n\n", tempBalance, name, surname);
         }
         else setBalance(tempBalance);
     }

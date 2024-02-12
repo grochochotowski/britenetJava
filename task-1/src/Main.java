@@ -30,6 +30,7 @@ public class Main {
         employee_3.display(); System.out.println("\n");
 
         // ========== ACCOUNT ==========
+        System.out.println("\n\n\n\n");
         // Create example data
         Account account_1 = new Account("Adam", "Rogowski", 100.75, "41 1234 5678 9012 3456 7890 1234");
         Account account_2 = new Account("Karol", "Maciuka", 50, "42 1234 5678 9012 3456 7890 1234");
@@ -41,7 +42,7 @@ public class Main {
         System.out.println(account_2.toString());
         System.out.println(account_3.toString());
         System.out.println(account_4.toString());
-        System.out.println("\n\n");
+        System.out.println("\n");
 
         // Increase for 1
         account_1.increaseBalance(100);
