@@ -42,5 +42,15 @@ public class Employee {
     public void setSalary(double salary) { this.salary = salary; }
     public void setExperienceStage(int experienceStage) { this.experienceStage = experienceStage; }
 
-    
+    // Other method
+    public String display() {
+        String experience = switch (experienceStage) {
+            case 0 -> "intern";
+            case 1 -> "junior";
+            case 2 -> "mid";
+            case 3 -> "senior";
+            default -> "none";
+        };
+        return String.format("Name: %s %s\nPESEL: %s\nOccupation: %s\nSalary: %.2fPLN\nExperience: %s", name, surname, PESEL, occupation, salary, experience);
+    }
 }
