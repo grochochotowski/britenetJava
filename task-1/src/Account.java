@@ -42,11 +42,14 @@ public class Account {
                             name, surname, balance, accountNumber);
     }
 
-    public void increaseBalance (double amountToIncrease) {
-
-    }
+    public void increaseBalance (double amountToIncrease) { setBalance(balance + amountToIncrease); }
     public void decreaseBalance (double amountToDecrease) {
-
+        double tempBalance = getBalance();
+        tempBalance -= amountToDecrease;
+        if (tempBalance < 0) {
+            System.out.printf("ERROR - negative balance: %.2fPLN", tempBalance);
+        }
+        else setBalance(tempBalance);
     }
     public void withdrawAll () {
 
