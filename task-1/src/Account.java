@@ -14,5 +14,17 @@ public class Account {
         this.accountNumber = accountNumber;
     }
 
+    // Getters
+    public String getName() { return name; }
+    public String getSurname() { return surname; }
+    public double getBalance() { return balance; }
+    public String getAccountNumber() { return accountNumber; }
+
+    // Setters
+    public void setName(String name) { this.name = name; }
+    public void setSurname(String surname) { this.surname = surname; }
+    public void setBalance(double balance) { this.balance = balance; }
+    public void setAccountNumber(String accountNumber) { this.accountNumber = accountNumber; }
+
     // Other methods
 }
