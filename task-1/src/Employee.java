@@ -48,7 +48,7 @@ public class Employee {
                 '}';
     }
 
-    public String display() {
+    public void display() {
         String experience = switch (experienceStage) {
             case 0 -> "intern";
             case 1 -> "junior";
@@ -56,15 +56,13 @@ public class Employee {
             case 3 -> "senior";
             default -> "none";
         };
-        return String.format("Name: %s %s\n" +
-                "PESEL: %s\n" +
-                "Occupation: %s\n" +
-                "Salary: %.2fPLN\n" +
-                "Experience: %s",
-                name, surname, PESEL, occupation, salary, experience);
+        System.out.printf("Name: %s %s\n" +
+                        "PESEL: %s\n" +
+                        "Occupation: %s\n" +
+                        "Salary: %.2fPLN\n" +
+                        "Experience: %s",
+                        name, surname, PESEL, occupation, salary, experience);
     }
 
-    public void giveRise(double rise) {
-        setSalary(salary + rise);
-    }
+    public void giveRise(double rise) { setSalary(salary + rise); }
 }
