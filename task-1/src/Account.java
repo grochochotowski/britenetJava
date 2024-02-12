@@ -29,7 +29,12 @@ public class Account {
     // Other methods
     @Override
     public String toString() {
-
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", balance='" + balance + '\'' +
+                ", accountNumber=" + accountNumber +
+                '}';
     }
 
     public String display() {
