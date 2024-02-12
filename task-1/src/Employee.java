@@ -43,6 +43,18 @@ public class Employee {
     public void setExperienceStage(int experienceStage) { this.experienceStage = experienceStage; }
 
     // Other method
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", PESEL='" + PESEL + '\'' +
+                ", occupation='" + occupation + '\'' +
+                ", salary=" + salary +
+                ", experienceStage=" + experienceStage +
+                '}';
+    }
+
     public String display() {
         String experience = switch (experienceStage) {
             case 0 -> "intern";
@@ -51,7 +63,12 @@ public class Employee {
             case 3 -> "senior";
             default -> "none";
         };
-        return String.format("Name: %s %s\nPESEL: %s\nOccupation: %s\nSalary: %.2fPLN\nExperience: %s", name, surname, PESEL, occupation, salary, experience);
+        return String.format("Name: %s %s\n" +
+                "PESEL: %s\n" +
+                "Occupation: %s\n" +
+                "Salary: %.2fPLN\n" +
+                "Experience: %s",
+                name, surname, PESEL, occupation, salary, experience);
     }
 
     public void giveRise(double rise) {
