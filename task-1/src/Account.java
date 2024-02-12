@@ -51,7 +51,5 @@ public class Account {
         }
         else setBalance(tempBalance);
     }
-    public void withdrawAll () {
-
-    }
+    public void withdrawAll () { setBalance(0); }
 }
