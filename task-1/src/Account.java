@@ -27,4 +27,22 @@ public class Account {
     public void setAccountNumber(String accountNumber) { this.accountNumber = accountNumber; }
 
     // Other methods
+    @Override
+    public String toString() {
+
+    }
+
+    public String display() {
+
+    }
+
+    public void increaseBalance (double amountToIncrease) {
+
+    }
+    public void decreaseBalance (double amountToDecrease) {
+
+    }
+    public void withdrawAll () {
+
+    }
 }
