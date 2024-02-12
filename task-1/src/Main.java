@@ -14,18 +14,18 @@ public class Main {
         System.out.println(employee_3.toString());
         System.out.println(employee_4.toString());
 
-        System.out.println("\n");
+        System.out.println("\n\n");
         // Display all with display
-        System.out.println(employee_1.display() + "\n");
-        System.out.println(employee_2.display() + "\n");
-        System.out.println(employee_3.display() + "\n");
-        System.out.println(employee_4.display() + "\n");
+        employee_1.display(); System.out.println("\n");
+        employee_2.display(); System.out.println("\n");
+        employee_3.display(); System.out.println("\n");
+        employee_4.display(); System.out.println("\n");
 
-        System.out.println("\n");
+        System.out.println("\n\n");
         // Display rise for 1 and 3
         employee_1.giveRise(200.89);
         employee_3.giveRise(100.3);
-        System.out.println(employee_1.display() + "\n");
-        System.out.println(employee_3.display() + "\n");
+        employee_1.display(); System.out.println("\n");
+        employee_3.display(); System.out.println("\n");
     }
 }
