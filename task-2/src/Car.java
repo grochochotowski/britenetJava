@@ -83,7 +83,7 @@ public class Car {
         this.fuel += tankCapacity;
     }
     public boolean isEmpty() {
-
+        return fuel == 0;
     }
 
     // driving
