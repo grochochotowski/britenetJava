@@ -13,10 +13,11 @@ public class Main {
         car4.display();
 
         // test getAge()
-        car1.getAge();
-        car2.getAge();
-        car3.getAge();
-        car4.getAge();
+        System.out.println(car1.getAge());
+        System.out.println(car2.getAge());
+        System.out.println(car3.getAge());
+        System.out.println(car4.getAge());
+        System.out.println("\n");
 
         // test speed
         car1.speedUp(30);
@@ -29,6 +30,9 @@ public class Main {
         car2.refuelToFull();
         System.out.println(car2.isEmpty());
         System.out.println(car3.isEmpty());
+        System.out.println("\n");
+        car1.display();
+        car2.display();
 
         // test drive
         car1.drive(500);
