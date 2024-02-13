@@ -66,7 +66,7 @@ public class Car {
                 brand, model, year, licencePlate, mileage, combustion, speed, maxSpeed, fuel, tankCapacity);
     }
     public int getAge() {
-        return Calendar.getInstance().get(Calendar.YEAR) - year;
+        return Calendar.getInstance().get(Calendar.YEAR) - getYear();
     }
 
     // speed
@@ -82,7 +82,7 @@ public class Car {
         this.fuel += fuel;
     }
     public void refuelToFull() {
-        this.fuel += tankCapacity;
+        this.fuel += getTankCapacity();
     }
     public boolean isEmpty() {
         return fuel == 0;
@@ -90,11 +90,11 @@ public class Car {
 
     // driving
     public void drive(double distance) {
-        double tempFuel = this.fuel;
-        this.fuel -= combustion * distance / 100;
+        double tempFuel = getFuel();
+        this.fuel -= getCombustion() * distance / 100;
         if (fuel < 0) {
             this.fuel = 0;
-            this.mileage = tempFuel * 100 / combustion;
+            this.mileage = tempFuel * 100 / getCombustion();
         }
         else {
             this.mileage += distance;
