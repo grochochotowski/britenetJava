@@ -27,6 +27,16 @@ public class Car {
     }
 
     // getters
+    public String getBrand() { return brand; }
+    public String getModel() { return model; }
+    public int getYear() { return year; }
+    public double getMileage() { return mileage; }
+    public double getCombustion() { return combustion; }
+    public double getMaxSpeed() { return maxSpeed; }
+    public double getSpeed() { return speed; }
+    public double getTankCapacity() { return tankCapacity; }
+    public double getFuel() { return fuel; }
+    public String getLicencePlate() { return licencePlate; }
 
     // setters
 
