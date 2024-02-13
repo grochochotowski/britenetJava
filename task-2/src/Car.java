@@ -68,7 +68,7 @@ public class Car {
     }
 
     // speed
-    public void sppedUp(double speed) {
+    public void speedUp(double speed) {
         this.speed += speed;
     }
     public void slowDown(double speed) {
