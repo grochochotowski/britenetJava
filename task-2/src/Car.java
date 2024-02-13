@@ -53,7 +53,13 @@ public class Car {
                 brand, model, year, mileage, combustion, maxSpeed, tankCapacity, licencePlate, speed, fuel);
     }
     public void display() {
-
+        System.out.printf("%s %s %d\n" +
+                        "Licence Plate: %s\n" +
+                        "Mileage: %.2f\n" +
+                        "Combustion: %.2f\n" +
+                        "Speed: %.2f / %.2f\n" +
+                        "Fuel: %.2f / %.2f%n",
+                brand, model, year, licencePlate, mileage, combustion, speed, maxSpeed, fuel, tankCapacity);
     }
     public int getAge() {
 
