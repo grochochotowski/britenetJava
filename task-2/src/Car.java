@@ -52,7 +52,9 @@ public class Car {
                         Licence Plate: %s
                         === Current state ===
                         Speed: %.2f km/h
-                        Fuel: %.2f l""",
+                        Fuel: %.2f l
+                        
+                        """,
                 brand, model, year, mileage, combustion, maxSpeed, tankCapacity, licencePlate, speed, fuel);
     }
     public void display() {
@@ -62,7 +64,9 @@ public class Car {
                         Mileage: %.2f km
                         Combustion: %.2f l/100km
                         Speed: %.2f / %.2f km/h
-                        Fuel: %.2f / %.2f%n l""",
+                        Fuel: %.2f / %.2f l
+                        
+                        """,
                 brand, model, year, licencePlate, mileage, combustion, speed, maxSpeed, fuel, tankCapacity);
     }
     public int getAge() {
@@ -96,7 +100,7 @@ public class Car {
         this.fuel -= getCombustion() * distance / 100;
         if (fuel < 0) {
             this.fuel = 0;
-            this.mileage = tempFuel * 100 / getCombustion();
+            this.mileage += tempFuel * 100 / getCombustion();
         }
         else {
             this.mileage += distance;
