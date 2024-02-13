@@ -76,8 +76,8 @@ public class Car {
     }
 
     // fuel
-    public void refuel() {
-
+    public void refuel(double fuel) {
+        this.fuel += fuel;
     }
     public void refuelToFull() {
 
