@@ -5,12 +5,12 @@ public class Car {
     private String brand;
     private String model;
     private int year;
-    private double mileage;
-    private double combustion;
-    private double maxSpeed;
-    private double speed;
-    private double tankCapacity;
-    private double fuel;
+    private double mileage; // km
+    private double combustion; // l/100km
+    private double maxSpeed; // kph
+    private double speed; // kph
+    private double tankCapacity; // l
+    private double fuel; // l
     private String licencePlate;
 
     // constructors
@@ -45,24 +45,24 @@ public class Car {
     public String toString() {
         return String.format("""
                         %s %s %d
-                        Mileage: %.2f
-                        Combustion: %.2f
-                        Max Speed: %.2f
-                        Tank Capacity: %.2f
+                        Mileage: %.2f km
+                        Combustion: %.2f l/100km
+                        Max Speed: %.2f km/h
+                        Tank Capacity: %.2f l
                         Licence Plate: %s
                         === Current state ===
-                        Speed: %.2f
-                        Fuel: %.2f""",
+                        Speed: %.2f km/h
+                        Fuel: %.2f l""",
                 brand, model, year, mileage, combustion, maxSpeed, tankCapacity, licencePlate, speed, fuel);
     }
     public void display() {
         System.out.printf("""
                         %s %s %d
                         Licence Plate: %s
-                        Mileage: %.2f
-                        Combustion: %.2f
-                        Speed: %.2f / %.2f
-                        Fuel: %.2f / %.2f%n""",
+                        Mileage: %.2f km
+                        Combustion: %.2f l/100km
+                        Speed: %.2f / %.2f km/h
+                        Fuel: %.2f / %.2f%n l""",
                 brand, model, year, licencePlate, mileage, combustion, speed, maxSpeed, fuel, tankCapacity);
     }
     public int getAge() {
@@ -90,7 +90,7 @@ public class Car {
 
     // driving
     public void drive() {
-        
+
     }
     public void stop() {
         this.speed = 0;
