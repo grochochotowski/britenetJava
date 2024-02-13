@@ -72,9 +72,11 @@ public class Car {
     // speed
     public void speedUp(double speed) {
         this.speed += speed;
+        if (speed > getMaxSpeed()) this.speed = getMaxSpeed();
     }
     public void slowDown(double speed) {
         this.speed -= speed;
+        if (speed < 0) this.speed = 0;
     }
 
     // fuel
