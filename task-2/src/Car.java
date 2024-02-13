@@ -38,8 +38,45 @@ public class Car {
     public double getFuel() { return fuel; }
     public String getLicencePlate() { return licencePlate; }
 
-    // setters
+    // car info
+    @Override
+    public String toString() {
 
-    //other methods
+    }
+    public void display() {
 
+    }
+    public int getAge() {
+
+    }
+
+    // speed
+    public void sppedUp() {
+
+    }
+    public void slowDown() {
+
+    }
+
+    // fuel
+    public void refuel() {
+
+    }
+    public void refuelToFull() {
+
+    }
+    public boolean isEmpty() {
+
+    }
+
+    // driving
+    public void drive() {
+
+    }
+    public void stop() {
+
+    }
+    public void tuning() {
+
+    }
 }
