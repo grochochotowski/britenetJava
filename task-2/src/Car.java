@@ -68,11 +68,11 @@ public class Car {
     }
 
     // speed
-    public void sppedUp() {
-
+    public void sppedUp(double speed) {
+        this.speed += speed;
     }
-    public void slowDown() {
-
+    public void slowDown(double speed) {
+        this.speed -= speed;
     }
 
     // fuel
