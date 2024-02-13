@@ -89,8 +89,16 @@ public class Car {
     }
 
     // driving
-    public void drive() {
-
+    public void drive(double distance) {
+        double tempFuel = this.fuel;
+        this.fuel -= combustion * distance / 100;
+        if (fuel < 0) {
+            this.fuel = 0;
+            this.mileage = tempFuel * 100 / combustion;
+        }
+        else {
+            this.mileage += distance;
+        }
     }
     public void stop() {
         this.speed = 0;
