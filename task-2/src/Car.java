@@ -91,9 +91,9 @@ public class Car {
 
     }
     public void stop() {
-
+        this.speed = 0;
     }
-    public void tuning() {
-
+    public void tuning(double moreSpeed) {
+        this.maxSpeed = moreSpeed;
     }
 }
