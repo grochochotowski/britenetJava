@@ -24,6 +24,22 @@ public class Main {
         car1.display();
         car2.display();
 
+        // test fuel
+        car1.refuel(20);
+        car2.refuelToFull();
+        System.out.println(car2.isEmpty());
+        System.out.println(car3.isEmpty());
 
+        // test drive
+        car1.drive(500);
+        car2.drive(100);
+        car2.stop();
+        car4.tuning(50);
+
+        // display after testing
+        car1.display();
+        car2.display();
+        car3.display();
+        car4.display();
     }
 }
