@@ -6,6 +6,24 @@ public class Main {
         Car car3 = new Car("Audi", "A1", 2014, 194000, 8.5, 200, 60, "TST 12A54");
         Car car4 = new Car("Porshe", "sth", 2024, 0, 15.5, 450, 75, "B0 SPEED");
 
+        // test toString and display
+        System.out.printf(car1.toString());
+        System.out.printf(car2.toString());
+        car3.display();
+        car4.display();
+
+        // test getAge()
+        car1.getAge();
+        car2.getAge();
+        car3.getAge();
+        car4.getAge();
+
+        // test speed
+        car1.speedUp(30);
+        car2.slowDown(30);
+        car1.display();
+        car2.display();
+
 
     }
 }
