@@ -41,7 +41,16 @@ public class Car {
     // car info
     @Override
     public String toString() {
-
+        return String.format("%s %s %d\n" +
+                        "Mileage: %.2f\n" +
+                        "Combustion: %.2f\n" +
+                        "Max Speed: %.2f\n" +
+                        "Tank Capacity: %.2f\n" +
+                        "Licence Plate: %s\n" +
+                        "=== Current state ===\n" +
+                        "Speed: %.2f\n" +
+                        "Fuel: %.2f",
+                brand, model, year, mileage, combustion, maxSpeed, tankCapacity, licencePlate, speed, fuel);
     }
     public void display() {
 
