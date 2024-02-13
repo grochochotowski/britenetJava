@@ -1,3 +1,5 @@
+import java.util.Calendar;
+
 public class Car {
     // variables
     private String brand;
@@ -62,7 +64,7 @@ public class Car {
                 brand, model, year, licencePlate, mileage, combustion, speed, maxSpeed, fuel, tankCapacity);
     }
     public int getAge() {
-
+        return Calendar.getInstance().get(Calendar.YEAR) - year;
     }
 
     // speed
