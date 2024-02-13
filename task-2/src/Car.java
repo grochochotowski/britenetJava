@@ -80,7 +80,7 @@ public class Car {
         this.fuel += fuel;
     }
     public void refuelToFull() {
-
+        this.fuel += tankCapacity;
     }
     public boolean isEmpty() {
 
