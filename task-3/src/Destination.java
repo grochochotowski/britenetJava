@@ -23,5 +23,10 @@ public class Destination {
     public void setPrice(double price) { this.price = price; }
 
     // other
-    
+    public void display() {
+        String text = """
+                    %s >>> %s (%.2fPLN)
+                    """;
+        System.out.printf(text, from, to, price);
+    }
 }
