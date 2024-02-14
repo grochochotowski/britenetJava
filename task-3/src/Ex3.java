@@ -11,8 +11,10 @@ public class Ex3 {
         Student student2 = new Student(2, 5, 3.4, person2);
 
         // test methods
-        student1.checkAverage(4.4);
-        student1.checkAverage(4.6);
+        System.out.print(student1.checkAverage(4.4));
+        System.out.print("\n");
+        System.out.print(student1.checkAverage(4.6));
+        System.out.println("\n");
 
         student2.display();
     }
