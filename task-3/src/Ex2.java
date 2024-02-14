@@ -11,5 +11,12 @@ public class Ex2 {
         Ticket ticket2 = new Ticket(34, dest1, passenger2);
 
         // test methods
+        System.out.println(ticket1.getFinalPrice());
+        System.out.println(ticket2.getFinalPrice());
+
+        System.out.println("\n");
+
+        ticket1.display();
+        ticket2.display();
     }
 }
