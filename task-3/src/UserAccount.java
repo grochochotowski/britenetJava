@@ -31,8 +31,8 @@ public class UserAccount {
         this.premium = false;
     }
 
-    public void isOfAge() {
-
+    public boolean isOfAge() {
+        return this.userData.getAge() >= 18;
     }
 
     public void display() {
