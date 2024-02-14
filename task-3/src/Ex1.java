@@ -9,6 +9,6 @@ public class Ex1 {
         Person person3 = new Person("Maciej", "Kowalczuk", 1950,
                 new Address("Bialsytok", "Zachodnia", "15", "15-341"));
 
-        
+
     }
 }
