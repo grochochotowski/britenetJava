@@ -32,7 +32,7 @@ public class Person {
         return Calendar.getInstance().get(Calendar.YEAR) - getYearOfBirth();
     }
     public boolean is18 () {
-        return Calendar.getInstance().get(Calendar.YEAR) - getAge() >= 18;
+        return getAge() >= 18;
     }
     public void changeAddress () {
 
