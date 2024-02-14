@@ -25,7 +25,7 @@ public class Passenger {
     // other
     public void display() {
         String text = """
-                    %s %s - discount:
+                    %s %s - discount %b:
                     """;
         System.out.printf(text, name, surname, discount?"YES":"NO");
     }
