@@ -26,5 +26,14 @@ public class Address {
     public void setStreet(String street) { this.street = street; }
     public void setNumber(String number) { this.number = number; }
     public void setPostalCode(String postalCode) { this.postalCode = postalCode; }
-    
+
+    // other
+    public void display() {
+        String text =
+                """
+                %s, %s, %s, %s
+                """,
+        city, postalCode, street, number;
+        System.out.println(text);
+    }
 }
