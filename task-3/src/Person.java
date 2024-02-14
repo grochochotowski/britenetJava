@@ -56,14 +56,12 @@ public class Person {
         address.setNumber(newNumber);
     }
     public void display () {
-        String text =
-                """
-                %s %s
-                Year of birth: %d
-                Address:
-                """,
-                name, surname, yearOfBirth;
-        System.out.printf(text);
+        String text = """
+                    %s %s
+                    Year of birth: %d
+                    Address:
+                    """;
+        System.out.printf(text, name, surname, yearOfBirth);
         this.address.display();
     }
 }

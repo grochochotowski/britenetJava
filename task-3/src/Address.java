@@ -31,9 +31,8 @@ public class Address {
     public void display() {
         String text =
                 """
-                %s, %s, %s, %s
-                """,
-        city, postalCode, street, number;
-        System.out.println(text);
+                %s, %s, %s %s
+                """;
+        System.out.printf(text, city, postalCode, street, number);
     }
 }
