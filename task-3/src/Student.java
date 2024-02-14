@@ -23,7 +23,13 @@ public class Student {
     public double getAverage() { return average; }
     public Person getPersonalData() { return personalData; }
 
+    public int getYear() { return (int) (double) (semester / 2); }
+
     // setters
     public void setSemester(int semester) { this.semester = semester; }
     public void setAverage(double average) { this.average = average; }
+
+    // other
+
+
 }
