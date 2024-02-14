@@ -38,6 +38,14 @@ public class Person {
 
     }
     public void display () {
-
+        String text =
+                """
+                %s %s
+                Year of birth: %d
+                Address:
+                """,
+                name, surname, yearOfBirth;
+        System.out.printf(text);
+        this.address.display();
     }
 }
