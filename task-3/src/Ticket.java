@@ -27,13 +27,13 @@ public class Ticket {
         return this.destination.getPrice() * ( this.passenger.isDiscount() ? 0.5 : 1);
     }
     public void display() {
+        this.destination.display();
         String text = """
                     Seat: %d
-                    Destination:
+                    Passenger:
                     """;
         System.out.printf(text, seat);
-        this.destination.display();
-        System.out.println("Passenger:");
         this.passenger.display();
+        System.out.print("\n");
     }
 }
