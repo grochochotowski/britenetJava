@@ -25,10 +25,10 @@ public class UserAccount {
     }
 
     public void activatePremium() {
-
+        this.premium = true;
     }
     public void deactivatePremium() {
-
+        this.premium = false;
     }
 
     public void isOfAge() {
