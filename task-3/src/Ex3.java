@@ -1,4 +1,4 @@
-public class Ex1 {
+public class Ex3 {
     public static void main(String[] args) {
         // Create examples
         Address add1 = new Address("Bialystok", "Sienkiewicza", "12A", "15-082");
@@ -6,15 +6,16 @@ public class Ex1 {
 
         Person person1 = new Person("Michal", "Kazimiruk", 2006, add1);
         Person person2 = new Person("Karolina", "Mackiewicz", 2015, add2);
-        Person person3 = new Person("Maciej", "Kowalczuk", 1950,
-                new Address("Bialsytok", "Zachodnia", "15", "15-341"));
+
+        Student student1 = new Student(1, 1, 4.5, person1);
+        Student student2 = new Student(2, 5, 3.4, person2);
 
         // test methods
-        System.out.println(person3.getAge());
-        System.out.println(person1.is18());
-        System.out.println(person2.is18());
-        person3.display();
-        person3.changeAddress();
-        person3.display();
+        System.out.print(student1.checkAverage(4.4));
+        System.out.print("\n");
+        System.out.print(student1.checkAverage(4.6));
+        System.out.println("\n");
+
+        student2.display();
     }
 }
