@@ -35,11 +35,10 @@ public class Student {
     }
     public void display() {
         String text = """
-                    ID:
-                    %s
+                    ID: %d
                     PERSONAL DATA:
                     """;
-        System.out.printf(text);
+        System.out.printf(text, id);
         this.personalData.display();
         text = """
                SEMESTER: %d
