@@ -20,6 +20,22 @@ public class UserAccount {
 
     // other
     public void setPassword(String password) { this.password = password; }
-   
+    public void typePassword() {
 
+    }
+
+    public void activatePremium() {
+
+    }
+    public void deactivatePremium() {
+
+    }
+    
+    public void isOfAge() {
+
+    }
+
+    public void display() {
+
+    }
 }
