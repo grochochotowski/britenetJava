@@ -30,8 +30,21 @@ public class Student {
     public void setAverage(double average) { this.average = average; }
 
     // other
-
     public boolean checkAverage(double avg) {
         return this.average > avg;
+    }
+    public void display() {
+        String text = """
+                    ID:
+                    %s
+                    PERSONAL DATA:
+                    """;
+        System.out.printf(text);
+        this.personalData.display();
+        text = """
+               SEMESTER: %d
+               AVERAGE: %.2f
+               """;
+        System.out.printf(text, semester, average);
     }
 }
