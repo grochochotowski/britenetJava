@@ -18,5 +18,17 @@ public class UserAccount {
         this.premium = premium;
     }
 
-    
+    // getters
+    public int getId() { return id; }
+    public String getLogin() { return login; }
+    public String getPassword() { return password; }
+    public User getUserData() { return userData; }
+    public boolean isPremium() { return premium; }
+
+
+    // setters
+    public void setLogin(String login) { this.login = login; }
+    public void setPassword(String password) { this.password = password; }
+    public void setUserData(User userData) { this.userData = userData; }
+    public void setPremium(boolean premium) { this.premium = premium; }
 }
