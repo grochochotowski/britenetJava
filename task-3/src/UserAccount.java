@@ -19,7 +19,12 @@ public class UserAccount {
     }
 
     // other
-    public void setPassword(String password) { this.password = password; }
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    public String remindPassword() {
+        return this.password;
+    }
     public boolean typePassword(String password) {
         return this.password.equals(password);
     }
