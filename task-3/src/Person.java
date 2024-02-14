@@ -29,7 +29,7 @@ public class Person {
 
     // other methods
     public int getAge() {
-
+        return Calendar.getInstance().get(Calendar.YEAR) - getYearOfBirth();
     }
     public boolean is18 () {
         return Calendar.getInstance().get(Calendar.YEAR) - getAge() >= 18;
