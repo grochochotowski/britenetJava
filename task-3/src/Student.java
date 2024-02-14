@@ -17,5 +17,13 @@ public class Student {
         this.personalData = personalData;
     }
 
-    //
+    // getters
+    public int getId() { return id; }
+    public int getSemester() { return semester; }
+    public double getAverage() { return average; }
+    public Person getPersonalData() { return personalData; }
+
+    // setters
+    public void setSemester(int semester) { this.semester = semester; }
+    public void setAverage(double average) { this.average = average; }
 }
