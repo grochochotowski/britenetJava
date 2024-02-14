@@ -9,6 +9,11 @@ public class Ex1 {
         Person person3 = new Person("Maciej", "Kowalczuk", 1950,
                 new Address("Bialsytok", "Zachodnia", "15", "15-341"));
 
-
+        System.out.println(person3.getAge());
+        System.out.println(person1.is18());
+        System.out.println(person2.is18());
+        person3.display();
+        person3.changeAddress();
+        person3.display();
     }
 }
