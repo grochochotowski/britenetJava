@@ -23,7 +23,7 @@ public class Passenger {
     public void setDiscount(boolean discount) { this.discount = discount; }
 
     // other
-    public void display () {
+    public void display() {
         String text = """
                     %s %s
                     Year of birth: %d
