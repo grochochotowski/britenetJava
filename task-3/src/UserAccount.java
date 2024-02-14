@@ -31,4 +31,7 @@ public class UserAccount {
     public void setPassword(String password) { this.password = password; }
     public void setUserData(User userData) { this.userData = userData; }
     public void setPremium(boolean premium) { this.premium = premium; }
+
+    // other
+    
 }
