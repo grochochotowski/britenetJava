@@ -1,4 +1,5 @@
 import java.util.Calendar;
+import java.util.Scanner;
 
 public class Person {
     // variables
@@ -35,7 +36,20 @@ public class Person {
         return getAge() >= 18;
     }
     public void changeAddress () {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("==== Set new address ====\nCity:");
+        String newCity = scan.nextLine();
+        System.out.println("Postal Code:");
+        String newPostalCode = scan.nextLine();
+        System.out.println("Street:");
+        String newStreet = scan.nextLine();
+        System.out.println("Number:");
+        String newNumber = scan.nextLine();
 
+        address.setCity(newCity);
+        address.setPostalCode(newPostalCode);
+        address.setStreet(newStreet);
+        address.setNumber(newNumber);
     }
     public void display () {
         String text =
