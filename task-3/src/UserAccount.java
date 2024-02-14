@@ -20,8 +20,8 @@ public class UserAccount {
 
     // other
     public void setPassword(String password) { this.password = password; }
-    public void typePassword() {
-
+    public boolean typePassword(String password) {
+        return this.password.equals(password);
     }
 
     public void activatePremium() {
@@ -30,7 +30,7 @@ public class UserAccount {
     public void deactivatePremium() {
 
     }
-    
+
     public void isOfAge() {
 
     }
