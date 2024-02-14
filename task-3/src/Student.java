@@ -31,5 +31,7 @@ public class Student {
 
     // other
 
-
+    public boolean checkAverage(double avg) {
+        return this.average > avg;
+    }
 }
