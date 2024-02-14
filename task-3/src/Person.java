@@ -1,3 +1,5 @@
+import java.util.Calendar;
+
 public class Person {
     // variables
     private String name;
@@ -25,5 +27,17 @@ public class Person {
     public static void setYearOfBirth(int yearOfBirth) { Person.yearOfBirth = yearOfBirth; }
     public void setAddress(Address address) { this.address = address; }
 
-    
+    // other methods
+    public int getAge() {
+
+    }
+    public boolean is18 () {
+        return Calendar.getInstance().get(Calendar.YEAR) - getAge() >= 18;
+    }
+    public void changeAddress () {
+
+    }
+    public void display () {
+
+    }
 }
