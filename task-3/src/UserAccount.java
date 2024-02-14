@@ -9,6 +9,7 @@ public class UserAccount {
     // constructors
     public UserAccount() {
         this.id = -1;
+        this.premium = false;
     }
     public UserAccount(int id, String login, String password, User userData) {
         this.id = id;
@@ -45,7 +46,7 @@ public class UserAccount {
                     ID: %d
                     LOGIN: %s
                     PASSWORD: %s
-                    PREMIUM ACCOUNT: %b
+                    PREMIUM ACCOUNT: %s
                     """;
         System.out.printf(text, id, login, password, premium ? "ACTIVE" : "NOT ACTIVE");
         this.userData.display();
