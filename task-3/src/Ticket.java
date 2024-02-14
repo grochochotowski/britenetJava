@@ -21,4 +21,19 @@ public class Ticket {
     public void setSeat(int seat) { this.seat = seat; }
     public void setDestination(Destination destination) { this.destination = destination; }
     public void setPassenger(Passenger passenger) { this.passenger = passenger; }
+
+    // other
+    public double getFinalPrice() {
+
+    }
+    public void display() {
+        String text = """
+                    Seat: %d
+                    Destination:
+                    """;
+        System.out.printf(text, seat);
+        this.destination.display();
+        System.out.println("Passenger:");
+        this.passenger.display();
+    }
 }
