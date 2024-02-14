@@ -24,7 +24,7 @@ public class Ticket {
 
     // other
     public double getFinalPrice() {
-
+        return this.destination.getPrice() * ( this.passenger.isDiscount() ? 0.5 : 1);
     }
     public void display() {
         String text = """
