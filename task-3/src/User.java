@@ -27,5 +27,13 @@ public class User {
     public void setPhone_number(String phone_number) { this.phone_number = phone_number; }
 
     // other
-    
+    public void display() {
+        String text = """
+                    NAME: %s
+                    AGE: %d
+                    EMAIL: %s
+                    PHONE NUMBER: %s
+                    """;
+        System.out.printf(text, name, age, email, phone_number);
+    }
 }
