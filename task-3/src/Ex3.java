@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public class Ex3 {
+public class Ex3 {
+
 }
