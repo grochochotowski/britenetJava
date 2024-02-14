@@ -11,4 +11,17 @@ public class Destination {
         this.to = to;
         this.price = price;
     }
+
+    // getters
+    public String getFrom() { return from; }
+    public String getTo() { return to; }
+    public double getPrice() { return price; }
+
+    // setters
+    public void setFrom(String from) { this.from = from; }
+    public void setTo(String to) { this.to = to; }
+    public void setPrice(double price) { this.price = price; }
+
+    // other
+    
 }
