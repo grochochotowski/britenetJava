@@ -36,6 +36,13 @@ public class UserAccount {
     }
 
     public void display() {
-
+        String text = """
+                    ID: %d
+                    LOGIN: %s
+                    PASSWORD: %s
+                    PREMIUM ACCOUNT: %b
+                    """;
+        System.out.printf(text, id, login, password, premium ? "ACTIVE" : "NOT ACTIVE");
+        this.userData.display();
     }
 }
