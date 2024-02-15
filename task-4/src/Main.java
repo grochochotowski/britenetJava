@@ -87,5 +87,10 @@ public class Main {
         train1.displayTrainInfo();
         System.out.println("==================================");
 
+        // count in trains
+        System.out.println("======= COUNT IN CARRIAGES =======");
+        System.out.printf("Seniors in train 1: %d\n", train1.countEntitledToSeniorDiscount());
+        System.out.printf("Seniors in train 2: %d\n", train2.countEntitledToSeniorDiscount());
+        System.out.println("==================================");
     }
 }
