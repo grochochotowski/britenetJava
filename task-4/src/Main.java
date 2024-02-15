@@ -54,7 +54,7 @@ public class Main {
         carriage1.addPassenger(passengers.get(3));
         carriage1.addPassenger(passengers.get(9));
 
-        for (int i = 0; i < 39; i++) carriage2.addPassenger(passengers.get(i%12+1));
+        for (int i = 0; i < 39; i++) carriage2.addPassenger(passengers.get(i%11+1));
         carriage2.addPassenger(passengers.get(1));
         carriage2.addPassenger(passengers.get(2));
         carriage2.addPassenger(passengers.get(3));
