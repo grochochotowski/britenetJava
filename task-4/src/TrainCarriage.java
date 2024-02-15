@@ -23,7 +23,6 @@ public class TrainCarriage {
     public void addPassenger(Passenger passenger) {
         passengerList.add(passenger);
     }
-
     public void displayPassenger() {
         for (Passenger passenger : passengerList) {
             passenger.display();
@@ -49,5 +48,11 @@ public class TrainCarriage {
         }
         return count;
     }
-
+    public int countEntitledToJuniorDiscount() {
+        int count = 0;
+        for (Passenger passenger : passengerList) {
+            if (passenger.getAge() < 5) count++;
+        }
+        return count;
+    }
 }
