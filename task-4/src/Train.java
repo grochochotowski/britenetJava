@@ -23,12 +23,13 @@ public class Train {
     public List<TrainCarriage> getCarriageList() { return carriageList; }
 
     // carriage
-    private void addCarriage(TrainCarriage carriage) {
+    public void addCarriage(TrainCarriage carriage) {
         this.carriageList.add(carriage);
+        System.out.println("Carriage added");
     }
 
     // train
-    private void displayTrainInfo() {
+    public void displayTrainInfo() {
         System.out.printf("Train (%d carriages):\n" +
                 "%s >>> %s\n" +
                 "Price: %.2f\n",
