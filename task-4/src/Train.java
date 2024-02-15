@@ -40,4 +40,9 @@ public class Train {
     }
 
     // discounts
+    public int countEntitledToSeniorDiscount() {
+        int count = 0;
+        for (TrainCarriage carriage : carriageList) count += carriage.countEntitledToSeniorDiscount();
+        return count;
+    }
 }
