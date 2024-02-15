@@ -27,7 +27,7 @@ public class Passenger {
     }
 
     public void display() {
-        System.out.printf("NAME: %s %s\n AGE: %d\n\n", name, surname, age);
+        System.out.printf("NAME: %s %s\n AGE: %d\n", name, surname, age);
     }
 
 }
