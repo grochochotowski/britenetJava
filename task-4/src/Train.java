@@ -16,5 +16,11 @@ public class Train {
         this.carriageList = new ArrayList<>();
     }
 
+    // getters
+    public String getFrom() { return from; }
+    public String getTo() { return to; }
+    public double getPrice() { return price; }
+    public List<TrainCarriage> getCarriageList() { return carriageList; }
+
     
 }
