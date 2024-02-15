@@ -22,5 +22,13 @@ public class Train {
     public double getPrice() { return price; }
     public List<TrainCarriage> getCarriageList() { return carriageList; }
 
+    // carriage
+    private void addCarriage(TrainCarriage carriage) {
+        this.carriageList.add(carriage);
+    }
+
+    // train
     
+
+    // discounts
 }
