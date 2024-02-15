@@ -23,7 +23,7 @@ public class TrainCarriage {
     public void addPassenger(Passenger passenger) {
         passengerList.add(passenger);
     }
-    public void displayPassenger() {
+    public void displayPassengers() {
         for (Passenger passenger : passengerList) {
             passenger.display();
         }
@@ -37,7 +37,7 @@ public class TrainCarriage {
                 "%d seats available\n" +
                 "Passengers:",
                 maxSeats, passengerList.size(), maxSeats-passengerList.size());
-        displayPassenger();
+        displayPassengers();
     }
 
     // discount

@@ -35,7 +35,7 @@ public class Train {
                 carriageList.size(), from, to, price);
         for (int i = 0; i < carriageList.size(); i++) {
             System.out.printf("Carriage #%d:\n", i);
-            carriageList.get(i).displayPassenger();
+            carriageList.get(i).displayPassengers();
         }
     }
 
