@@ -31,7 +31,7 @@ public class TrainCarriage {
     }
 
     // carriage
-    public void display() {
+    public void displayCarriage() {
         System.out.printf("Carriage: %d seats\nPassengers:", maxSeats);
         displayPassenger();
     }
