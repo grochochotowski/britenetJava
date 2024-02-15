@@ -39,7 +39,7 @@ public class TrainCarriage {
                 "%d seats\n" +
                 "%d seats taken\n" +
                 "%d seats available\n" +
-                "Passengers:",
+                "Passengers:\n",
                 maxSeats, passengerList.size(), maxSeats-passengerList.size());
         displayPassengers();
     }
