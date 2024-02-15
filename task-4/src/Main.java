@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         // create example passengers
@@ -24,5 +28,9 @@ public class Main {
         // create example trains
         Train train1 = new Train("Bialystok", "Warszawa", 18.90);
         Train train2 = new Train("Warszawa", "Krakow", 23.40);
+
+        // create example list of passengers and display it
+        List<Passenger> passengers = Arrays.asList(passenger1, passenger5, passenger9);
+        for (Passenger passenger : passengers) passenger.display();
     }
 }
