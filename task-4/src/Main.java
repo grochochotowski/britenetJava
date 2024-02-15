@@ -30,7 +30,10 @@ public class Main {
         Train train2 = new Train("Warszawa", "Krakow", 23.40);
 
         // create example list of passengers and display it
+        System.out.println("\n=== EXAMPLE LIST OF PASSENGERS ===");
         List<Passenger> passengers = Arrays.asList(passenger1, passenger5, passenger9);
         for (Passenger passenger : passengers) passenger.display();
+        System.out.println("==================================");
+
     }
 }
