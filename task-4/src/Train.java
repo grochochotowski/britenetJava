@@ -28,7 +28,16 @@ public class Train {
     }
 
     // train
-    
+    private void displayTrainInfo() {
+        System.out.printf("Train (%d carriages):\n" +
+                "%s >>> %s\n" +
+                "Price: %.2f\n",
+                carriageList.size(), from, to, price);
+        for (int i = 0; i < carriageList.size(); i++) {
+            System.out.printf("Carriage #%d:\n", i);
+            carriageList.get(i).displayPassenger();
+        }
+    }
 
     // discounts
 }
