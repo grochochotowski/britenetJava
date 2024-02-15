@@ -21,7 +21,10 @@ public class TrainCarriage {
 
     // passenger
     public void addPassenger(Passenger passenger) {
-        passengerList.add(passenger);
+        if (this.passengerList.size() <= this.maxSeats) {
+            passengerList.add(passenger);
+        }
+        else System.out.print("Can't book a ticket - no seats available");
     }
     public void displayPassengers() {
         for (Passenger passenger : passengerList) {
