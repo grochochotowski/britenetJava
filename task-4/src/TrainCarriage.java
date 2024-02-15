@@ -10,4 +10,8 @@ public class TrainCarriage {
         this.maxSeats = maxSeats;
         this.passengerList = new ArrayList<>();
     }
+
+    // getters
+    public int getMaxSeats() { return maxSeats; }
+    public List<Passenger> getPassengerList() { return passengerList; }
 }
