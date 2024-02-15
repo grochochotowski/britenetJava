@@ -19,5 +19,9 @@ public class TrainCarriage {
     public void setMaxSeats(int maxSeats) { this.maxSeats = maxSeats; }
     public void setPassengerList(List<Passenger> passengerList) { this.passengerList = passengerList; }
 
-    
+    // passenger
+    public void addPassenger(Passenger passenger) {
+        passengerList.add(passenger);
+    }
+
 }
