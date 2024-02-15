@@ -82,6 +82,10 @@ public class Main {
         train2.addCarriage(carriage1);
         train2.addCarriage(carriage2);
 
-        //
+        // display train info
+        System.out.println("========== TRAIN 1 INFO ==========");
+        train1.displayTrainInfo();
+        System.out.println("==================================");
+
     }
 }
