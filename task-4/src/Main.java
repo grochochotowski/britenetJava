@@ -19,11 +19,7 @@ public class Main {
 
         // create example carriages
         TrainCarriage carriage1 = new TrainCarriage(30);
-        TrainCarriage carriage2 = new TrainCarriage(30);
-        TrainCarriage carriage3 = new TrainCarriage(30);
-        TrainCarriage carriage4 = new TrainCarriage(40);
-        TrainCarriage carriage5 = new TrainCarriage(40);
-        TrainCarriage carriage6 = new TrainCarriage(40);
+        TrainCarriage carriage2 = new TrainCarriage(40);
 
         // create example trains
         Train train1 = new Train("Bialystok", "Warszawa", 18.90);
@@ -35,5 +31,18 @@ public class Main {
         for (Passenger passenger : passengers) passenger.display();
         System.out.println("==================================");
 
+        // add passengers to carriages
+        carriage1.addPassenger(passenger1);
+        carriage1.addPassenger(passenger2);
+        carriage1.addPassenger(passenger7);
+        carriage1.addPassenger(passenger5);
+        carriage1.addPassenger(passenger9);
+        carriage1.addPassenger(passenger3);
+        carriage1.addPassenger(passenger4);
+
+        for (int i = 0; i < 39; i++) carriage2.addPassenger(passenger5);
+        carriage2.addPassenger(passenger4);
+        carriage2.addPassenger(passenger7);
+        carriage2.addPassenger(passenger9);
     }
 }
