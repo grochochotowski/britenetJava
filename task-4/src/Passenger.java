@@ -10,4 +10,11 @@ public class Passenger {
         this.surname = surname;
         this.age = age;
     }
+
+    // getters
+    public String getName() { return name; }
+    public String getSurname() { return surname; }
+    public int getAge() { return age; }
+
+    
 }
