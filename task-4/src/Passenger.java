@@ -4,7 +4,7 @@ public class Passenger {
     private String surname;
     private int age;
 
-    // methods
+    // constructor
     public Passenger(String name, String surname, int age) {
         this.name = name;
         this.surname = surname;
@@ -16,5 +16,14 @@ public class Passenger {
     public String getSurname() { return surname; }
     public int getAge() { return age; }
 
-    
+    // other
+    @Override
+    public String toString() {
+        String text =
+                """
+                %s %s - %d
+                """;
+        return String.format(text, name, surname, age);
+    }
+
 }
