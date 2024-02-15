@@ -24,4 +24,10 @@ public class TrainCarriage {
         passengerList.add(passenger);
     }
 
+    public void displayPassenger() {
+        for (Passenger passenger : passengerList) {
+            passenger.display();
+        }
+    }
+
 }
