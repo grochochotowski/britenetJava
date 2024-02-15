@@ -14,4 +14,10 @@ public class TrainCarriage {
     // getters
     public int getMaxSeats() { return maxSeats; }
     public List<Passenger> getPassengerList() { return passengerList; }
+
+    // setters
+    public void setMaxSeats(int maxSeats) { this.maxSeats = maxSeats; }
+    public void setPassengerList(List<Passenger> passengerList) { this.passengerList = passengerList; }
+
+    
 }
