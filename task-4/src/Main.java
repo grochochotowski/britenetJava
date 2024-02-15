@@ -34,7 +34,7 @@ public class Main {
 
         System.out.println("\n=== EXAMPLE LIST OF PASSENGERS ===");
         for (Passenger passenger : passengers) passenger.display();
-        System.out.println("==================================");
+        System.out.println("==================================\n");
 
 
         // create example carriages
@@ -58,5 +58,13 @@ public class Main {
         carriage2.addPassenger(passengers.get(1));
         carriage2.addPassenger(passengers.get(2));
         carriage2.addPassenger(passengers.get(3));
+
+        // display carriage and/or passengers
+        System.out.println("\n=========== CARRIAGE 1 ===========");
+        carriage1.displayCarriage();
+        System.out.println("==================================");
+        System.out.println("=== PASSENGERS FROM CARRIAGE 2 ===");
+        carriage2.displayPassengers();
+        System.out.println("==================================");
     }
 }
