@@ -1,21 +1,41 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // create example passengers
-        Passenger passenger1 = new Passenger("Szymon", "Kowalski", 3);
-        Passenger passenger2 = new Passenger("Maciej", "Bednarek", 4);
-        Passenger passenger3 = new Passenger("Izabella", "Lewandowska", 5);
+        // create example passengers and display it
+        List<Passenger> passengers = new ArrayList<>();
 
-        Passenger passenger4 = new Passenger("Karol", "Kubica", 23);
-        Passenger passenger5 = new Passenger("Karolina", "Małysz", 24);
-        Passenger passenger6 = new Passenger("Paweł", "Korzeniowski", 25);
+        passengers.add(new Passenger("Szymon", "Kowalski", 3));
+        passengers.add(new Passenger("Maciej", "Bednarek", 4));
+        passengers.add(new Passenger("Izabella", "Lewandowska", 5));
 
-        Passenger passenger7 = new Passenger("Teodora", "Chmielewska", 65);
-        Passenger passenger8 = new Passenger("Agnieszka", "Karaś", 66);
-        Passenger passenger9 = new Passenger("Tadeusz", "Kościuszko", 67);
+        passengers.add(new Passenger("Karol", "Kubica", 23));
+        passengers.add(new Passenger("Karolina", "Małysz", 24));
+        passengers.add(new Passenger("Paweł", "Korzeniowski", 25));
+
+        passengers.add(new Passenger("Teodora", "Chmielewska", 65));
+        passengers.add(new Passenger("Agnieszka", "Karaś", 66));
+        passengers.add(new Passenger("Tadeusz", "Kościuszko", 67));
+
+        Scanner scan = new Scanner(System.in);
+        for (int i = 0; i < 3; i++) {
+            System.out.print("Name: ");
+            String name = scan.next();
+            System.out.print("Surname: ");
+            String surname = scan.next();;
+            System.out.print("Age: ");
+            int age = scan.nextInt();
+
+            passengers.add(new Passenger(name, surname, age));
+        }
+
+        System.out.println("\n=== EXAMPLE LIST OF PASSENGERS ===");
+        for (Passenger passenger : passengers) passenger.display();
+        System.out.println("==================================");
+
 
         // create example carriages
         TrainCarriage carriage1 = new TrainCarriage(30);
@@ -25,24 +45,18 @@ public class Main {
         Train train1 = new Train("Bialystok", "Warszawa", 18.90);
         Train train2 = new Train("Warszawa", "Krakow", 23.40);
 
-        // create example list of passengers and display it
-        System.out.println("\n=== EXAMPLE LIST OF PASSENGERS ===");
-        List<Passenger> passengers = Arrays.asList(passenger1, passenger5, passenger9);
-        for (Passenger passenger : passengers) passenger.display();
-        System.out.println("==================================");
-
         // add passengers to carriages
-        carriage1.addPassenger(passenger1);
-        carriage1.addPassenger(passenger2);
-        carriage1.addPassenger(passenger7);
-        carriage1.addPassenger(passenger5);
-        carriage1.addPassenger(passenger9);
-        carriage1.addPassenger(passenger3);
-        carriage1.addPassenger(passenger4);
+        carriage1.addPassenger(passengers.get(1));
+        carriage1.addPassenger(passengers.get(2));
+        carriage1.addPassenger(passengers.get(5));
+        carriage1.addPassenger(passengers.get(6));
+        carriage1.addPassenger(passengers.get(8));
+        carriage1.addPassenger(passengers.get(3));
+        carriage1.addPassenger(passengers.get(9));
 
-        for (int i = 0; i < 39; i++) carriage2.addPassenger(passenger5);
-        carriage2.addPassenger(passenger4);
-        carriage2.addPassenger(passenger7);
-        carriage2.addPassenger(passenger9);
+        for (int i = 0; i < 39; i++) carriage2.addPassenger(passengers.get(i%12+1));
+        carriage2.addPassenger(passengers.get(1));
+        carriage2.addPassenger(passengers.get(2));
+        carriage2.addPassenger(passengers.get(3));
     }
 }
