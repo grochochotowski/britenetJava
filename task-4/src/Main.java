@@ -72,5 +72,16 @@ public class Main {
         System.out.printf("Juniors in carriage 1: %d\n", carriage1.countEntitledToJuniorDiscount());
         System.out.printf("Seniors in carriage 2: %d\n", carriage2.countEntitledToSeniorDiscount());
         System.out.println("==================================");
+
+        // add carriages to train
+        train1.addCarriage(carriage1);
+        train1.addCarriage(carriage2);
+        train1.addCarriage(carriage1);
+
+        train2.addCarriage(carriage2);
+        train2.addCarriage(carriage1);
+        train2.addCarriage(carriage2);
+
+        //
     }
 }
