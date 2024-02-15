@@ -36,4 +36,13 @@ public class TrainCarriage {
         displayPassenger();
     }
 
+    // discount
+    public int countEntitledToSeniorDiscount() {
+        int count = 0;
+        for (Passenger passenger : passengerList) {
+            if (passenger.getAge() > 65) count++;
+        }
+        return count;
+    }
+
 }
