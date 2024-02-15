@@ -26,4 +26,8 @@ public class Passenger {
         return String.format(text, name, surname, age);
     }
 
+    public void display() {
+        System.out.printf("NAME: %s %s\n AGE: %d", name, surname, age);
+    }
+
 }
