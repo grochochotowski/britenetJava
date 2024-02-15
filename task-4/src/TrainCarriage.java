@@ -36,7 +36,7 @@ public class TrainCarriage {
     // carriage
     public void displayCarriage() {
         System.out.printf("Carriage:\n" +
-                "%d all seats\n" +
+                "%d seats\n" +
                 "%d seats taken\n" +
                 "%d seats available\n" +
                 "Passengers:",
