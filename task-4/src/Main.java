@@ -66,5 +66,11 @@ public class Main {
         System.out.println("=== PASSENGERS FROM CARRIAGE 2 ===");
         carriage2.displayPassengers();
         System.out.println("==================================");
+
+        // count in carriages
+        System.out.println("======= COUNT IN CARRIAGES =======");
+        System.out.printf("Juniors in carriage 1: %d\n", carriage1.countEntitledToJuniorDiscount());
+        System.out.printf("Seniors in carriage 2: %d\n", carriage2.countEntitledToSeniorDiscount());
+        System.out.println("==================================");
     }
 }
