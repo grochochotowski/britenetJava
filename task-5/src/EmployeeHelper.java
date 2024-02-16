@@ -7,7 +7,7 @@ public class EmployeeHelper {
         return yearsWorked > 5;
     }
 
-    public static void generateEmployeeID(String firstName, String lastName) {
-
+    public static String generateEmployeeID(String firstName, String lastName) {
+        return firstName.charAt(0) + lastName.substring(0, 3);
     }
 }
