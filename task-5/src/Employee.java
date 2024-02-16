@@ -29,7 +29,7 @@ public class Employee {
     public String getName() { return name; }
     public String getSurname() { return surname; }
     public int getYearOfBirth() { return yearOfBirth; }
-    public int getJobName() { return jobName; }
+    public String getJobName() { return jobName; }
     public String getCountry() { return country; }
     public String getCity() { return city; }
     public String getStreet() { return street; }
