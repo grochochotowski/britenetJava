@@ -4,6 +4,10 @@ public class Main {
         Employee employee1 = new Employee("Maciej", "Makarewicz", 2000, "web dev", "Poland", "Bialystok", "Sienkiewicza", 10500.50);
         Employee employee2 = new Employee("Karol", "Szycko", 1999, "shop assistant", "Poland", "Bialystok", "Mickiewicza", 5000.20);
 
+        // set static variables
+        Employee.setBONUS(555.55);
+        Employee.setMinimalPayment(4242.42);
+
         // display methods
         System.out.println(employee1.toString());
         employee2.displayAllData();
