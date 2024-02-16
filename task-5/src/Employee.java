@@ -1,7 +1,7 @@
 public class Employee {
     // variables
     private static double BONUS;
-    
+
     private String name;
     private String surname;
     private int yearOfBirth;
@@ -23,9 +23,13 @@ public class Employee {
     }
 
     // getters
+
+    public static double getBONUS() { return BONUS; }
+
     public String getName() { return name; }
     public String getSurname() { return surname; }
     public int getYearOfBirth() { return yearOfBirth; }
+    public int getJobName() { return jobName; }
     public String getCountry() { return country; }
     public String getCity() { return city; }
     public String getStreet() { return street; }
