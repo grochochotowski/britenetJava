@@ -64,10 +64,10 @@ public class Employee {
     public void displayAllData() {
         System.out.printf("""
                 NAME: %s %s - %d
-                JOB: %s - %.2f
+                JOB: %s - %.2fPLN (BONUS: %.2fPLN)
                 ADDRESS: %s, %s, %s
                 """,
-                name, surname, yearOfBirth, jobName, monthlySalaryGross, country, city, street);
+                name, surname, yearOfBirth, jobName, monthlySalaryGross, BONUS, country, city, street);
     }
 
     // income
