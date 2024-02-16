@@ -95,4 +95,10 @@ public class Employee {
     public double calculateMonthlySalaryNet() {
         return minimalPayment * (100-tax);
     }
+    public double calculateNetIncome() {
+        return this.calculateMonthlySalaryNet()*12;
+    }
+    public double calculateNetIncome(int months) {
+        return this.calculateMonthlySalaryNet()*months;
+    }
 }
