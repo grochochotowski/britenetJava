@@ -34,7 +34,7 @@ public class Employee {
 
     public String getName() { return name; }
     public String getSurname() { return surname; }
-    public String getEmployeeId() { return surname; }
+    public String getEmployeeId() { return employeeId; }
     public int getYearOfBirth() { return yearOfBirth; }
     public String getJobName() { return jobName; }
     public String getCountry() { return country; }
