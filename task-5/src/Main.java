@@ -24,5 +24,9 @@ public class Main {
         employee1.displayAllData();
         System.out.print("\n");
         employee2.displayAllData();
+
+        System.out.printf("Monthly net income of employee 1: %.2f", employee1.calculateNetIncome());
+        System.out.printf("Annual net income of employee 1: %.2f\n", employee1.calculateNetIncome());
+        System.out.printf("6 months net income of employee 2: %.2f\n\n", employee2.calculateNetIncome(6));
     }
 }
