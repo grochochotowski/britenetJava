@@ -66,4 +66,7 @@ public class Employee {
     public double calculateGrossIncome() {
         return this.monthlySalaryGross*12;
     }
+    public double calculateGrossIncome(int months) {
+        return this.monthlySalaryGross*months;
+    }
 }
