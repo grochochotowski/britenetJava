@@ -85,4 +85,7 @@ public class Employee {
     public void changeMonthlySalaryGross() {
         this.monthlySalaryGross = minimalPayment;
     }
+    public void changeMonthlySalaryGross(double rise) {
+        this.monthlySalaryGross += rise;
+    }
 }
