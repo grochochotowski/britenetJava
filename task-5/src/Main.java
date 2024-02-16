@@ -7,6 +7,7 @@ public class Main {
         // set static variables
         Employee.setBONUS(555.55);
         Employee.setMinimalPayment(4242.42);
+        Employee.setTax(23);
 
         // display methods
         System.out.println(employee1.toString());
