@@ -9,6 +9,8 @@ public class Ex1 {
         employee2.displayAllData();
         employee1.displayAddress();
 
-        
+        // income methods
+        System.out.println(employee1.calculateGrossIncome());
+        System.out.println(employee2.calculateGrossIncome(6));
     }
 }
