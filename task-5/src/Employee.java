@@ -81,4 +81,8 @@ public class Employee {
     public double calculateGrossIncome(int months) {
         return this.monthlySalaryGross*months;
     }
+
+    public void changeMonthlySalaryGross() {
+        this.monthlySalaryGross = minimalPayment;
+    }
 }
