@@ -18,4 +18,15 @@ public class Employee {
         this.street = street;
         this.monthlySalaryGross = monthlySalaryGross;
     }
+
+    // getters
+    public String getName() { return name; }
+    public String getSurname() { return surname; }
+    public int getYearOfBirth() { return yearOfBirth; }
+    public String getCountry() { return country; }
+    public String getCity() { return city; }
+    public String getStreet() { return street; }
+    public double getMonthlySalaryGross() { return monthlySalaryGross; }
+
+    
 }
