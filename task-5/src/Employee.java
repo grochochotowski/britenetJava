@@ -1,6 +1,7 @@
 public class Employee {
     // variables
     private static double BONUS;
+    private static double minimalPayment;
 
     private String name;
     private String surname;
@@ -25,6 +26,7 @@ public class Employee {
 
     // getters
     public static double getBONUS() { return BONUS; }
+    public static double getMinimalPayment() { return minimalPayment; }
 
     public String getName() { return name; }
     public String getSurname() { return surname; }
@@ -37,6 +39,7 @@ public class Employee {
 
     // setters
     public static void setBONUS(double BONUS) { Employee.BONUS = BONUS; }
+    public static void setMinimalPayment(double minimalPayment) { Employee.minimalPayment = minimalPayment; }
 
     public void setName(String name) { this.name = name; }
     public void setSurname(String surname) { this.surname = surname; }
@@ -65,7 +68,7 @@ public class Employee {
     public void displayAllData() {
         System.out.printf("""
                 NAME: %s %s - %d
-                JOB: %s - %.2fPLN (BONUS: %.2fPLN)
+                JOB: %s - %.2fPLN (+BONUS: %.2fPLN)
                 ADDRESS: %s, %s, %s
                 """,
                 name, surname, yearOfBirth, jobName, monthlySalaryGross, BONUS, country, city, street);
@@ -77,5 +80,12 @@ public class Employee {
     }
     public double calculateGrossIncome(int months) {
         return this.monthlySalaryGross*months;
+    }
+
+    public void changeMonthlySalaryGross() {
+        this.monthlySalaryGross = minimalPayment;
+    }
+    public void changeMonthlySalaryGross(double rise) {
+        this.monthlySalaryGross += rise;
     }
 }
