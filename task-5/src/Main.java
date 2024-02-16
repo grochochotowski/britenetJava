@@ -7,6 +7,7 @@ public class Main {
         // set static variables
         Employee.setBONUS(555.55);
         Employee.setMinimalPayment(4242.42);
+        Employee.setTax(23);
 
         // display methods
         System.out.println(employee1.toString());
@@ -24,5 +25,10 @@ public class Main {
         employee1.displayAllData();
         System.out.print("\n");
         employee2.displayAllData();
+        System.out.print("\n");
+
+        System.out.printf("Monthly net income of employee 1: %.2f\n", employee1.calculateMonthlySalaryNet());
+        System.out.printf("Annual net income of employee 1: %.2f\n", employee1.calculateNetIncome());
+        System.out.printf("6 months net income of employee 2: %.2f\n\n", employee2.calculateNetIncome(6));
     }
 }

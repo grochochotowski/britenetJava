@@ -2,6 +2,7 @@ public class Employee {
     // variables
     private static double BONUS;
     private static double minimalPayment;
+    private static int tax;
 
     private String name;
     private String surname;
@@ -27,6 +28,7 @@ public class Employee {
     // getters
     public static double getBONUS() { return BONUS; }
     public static double getMinimalPayment() { return minimalPayment; }
+    public static int getTax() { return tax; }
 
     public String getName() { return name; }
     public String getSurname() { return surname; }
@@ -40,6 +42,7 @@ public class Employee {
     // setters
     public static void setBONUS(double BONUS) { Employee.BONUS = BONUS; }
     public static void setMinimalPayment(double minimalPayment) { Employee.minimalPayment = minimalPayment; }
+    public static void setTax(int tax) { Employee.tax = tax; }
 
     public void setName(String name) { this.name = name; }
     public void setSurname(String surname) { this.surname = surname; }
@@ -87,5 +90,15 @@ public class Employee {
     }
     public void changeMonthlySalaryGross(double rise) {
         this.monthlySalaryGross += rise;
+    }
+
+    public double calculateMonthlySalaryNet() {
+        return monthlySalaryGross * (100-tax) / 100;
+    }
+    public double calculateNetIncome() {
+        return this.calculateMonthlySalaryNet()*12;
+    }
+    public double calculateNetIncome(int months) {
+        return this.calculateMonthlySalaryNet()*months;
     }
 }
