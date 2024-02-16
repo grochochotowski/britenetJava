@@ -17,6 +17,12 @@ public class Main {
 
         // income methods
         System.out.printf("Annual income of employee 1: %.2f\n", employee1.calculateGrossIncome());
-        System.out.printf("6 months income of employee 2: %.2f\n", employee2.calculateGrossIncome(6));
+        System.out.printf("6 months income of employee 2: %.2f\n\n", employee2.calculateGrossIncome(6));
+
+        employee1.changeMonthlySalaryGross(200);
+        employee2.changeMonthlySalaryGross();
+        employee1.displayAllData();
+        System.out.print("\n");
+        employee2.displayAllData();
     }
 }
