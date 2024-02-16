@@ -61,4 +61,9 @@ public class Employee {
                 """,
                 name, surname, yearOfBirth, jobName, monthlySalaryGross, country, city, street);
     }
+
+    // income
+    public double calculateGrossIncome() {
+        return this.monthlySalaryGross*12;
+    }
 }
