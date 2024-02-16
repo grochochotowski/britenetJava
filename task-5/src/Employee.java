@@ -1,5 +1,7 @@
 public class Employee {
     // variables
+    private static double BONUS;
+    
     private String name;
     private String surname;
     private int yearOfBirth;
