@@ -91,4 +91,8 @@ public class Employee {
     public void changeMonthlySalaryGross(double rise) {
         this.monthlySalaryGross += rise;
     }
+
+    public double calculateMonthlySalaryNet() {
+        return minimalPayment * (100-tax);
+    }
 }
