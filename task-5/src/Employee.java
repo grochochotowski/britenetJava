@@ -28,5 +28,14 @@ public class Employee {
     public String getStreet() { return street; }
     public double getMonthlySalaryGross() { return monthlySalaryGross; }
 
+    // setters
+    public void setName(String name) { this.name = name; }
+    public void setSurname(String surname) { this.surname = surname; }
+    public void setYearOfBirth(int yearOfBirth) { this.yearOfBirth = yearOfBirth; }
+    public void setCountry(String country) { this.country = country; }
+    public void setCity(String city) { this.city = city; }
+    public void setStreet(String street) { this.street = street; }
+    public void setMonthlySalaryGross(double monthlySalaryGross) { this.monthlySalaryGross = monthlySalaryGross; }
+
     
 }
