@@ -4,7 +4,7 @@ public class EmployeeHelper {
     }
 
     public static boolean isEligibleForPromotion(int yearsWorked) {
-
+        return yearsWorked > 5;
     }
 
     public static void generateEmployeeID(String firstName, String lastName) {
