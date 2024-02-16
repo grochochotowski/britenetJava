@@ -3,6 +3,7 @@ public class Employee {
     private String name;
     private String surname;
     private int yearOfBirth;
+    private int jobName;
     private String country;
     private String city;
     private String street;
@@ -37,5 +38,16 @@ public class Employee {
     public void setStreet(String street) { this.street = street; }
     public void setMonthlySalaryGross(double monthlySalaryGross) { this.monthlySalaryGross = monthlySalaryGross; }
 
-    
+    // display methods
+    @Override
+    public String toString() {
+        String text =
+                """
+                %s %s - %d
+                %s - %.2f PLN
+                %s, %s, %s
+                """;
+        return String.format(text, name, surname, yearOfBirth, jobName, monthlySalaryGross, country, city, street);
+    }
+
 }
