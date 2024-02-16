@@ -23,7 +23,6 @@ public class Employee {
     }
 
     // getters
-
     public static double getBONUS() { return BONUS; }
 
     public String getName() { return name; }
@@ -36,9 +35,12 @@ public class Employee {
     public double getMonthlySalaryGross() { return monthlySalaryGross; }
 
     // setters
+    public static void setBONUS(double BONUS) { Employee.BONUS = BONUS; }
+
     public void setName(String name) { this.name = name; }
     public void setSurname(String surname) { this.surname = surname; }
     public void setYearOfBirth(int yearOfBirth) { this.yearOfBirth = yearOfBirth; }
+    public void setJobName(int jobName) { this.jobName = jobName; }
     public void setCountry(String country) { this.country = country; }
     public void setCity(String city) { this.city = city; }
     public void setStreet(String street) { this.street = street; }
