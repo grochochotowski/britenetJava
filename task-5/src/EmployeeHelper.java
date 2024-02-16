@@ -8,6 +8,9 @@ public class EmployeeHelper {
     }
 
     public static String generateEmployeeID(String firstName, String lastName) {
-        return firstName.charAt(0) + lastName.substring(0, 3);
+        char nameLetter = firstName.charAt(0);
+        String lastNameLetters = lastName.substring(0, 3);
+        
+        return nameLetter + lastNameLetters;
     }
 }
