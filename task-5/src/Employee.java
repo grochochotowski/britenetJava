@@ -50,4 +50,7 @@ public class Employee {
         return String.format(text, name, surname, yearOfBirth, jobName, monthlySalaryGross, country, city, street);
     }
 
+    public void displayAddress() {
+        System.out.printf("%s, %s, %s", country, city, street);
+    }
 }
