@@ -7,10 +7,12 @@ public class Ex1 {
         // display methods
         System.out.println(employee1.toString());
         employee2.displayAllData();
+        System.out.print("\nAddress of employee 1:\n");
         employee1.displayAddress();
+        System.out.print("\n\n");
 
         // income methods
-        System.out.println(employee1.calculateGrossIncome());
-        System.out.println(employee2.calculateGrossIncome(6));
+        System.out.printf("Annual income of employee 1: %.2f\n", employee1.calculateGrossIncome());
+        System.out.printf("6 months income of employee 2: %.2f\n", employee2.calculateGrossIncome(6));
     }
 }
