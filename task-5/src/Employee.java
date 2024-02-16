@@ -53,4 +53,12 @@ public class Employee {
     public void displayAddress() {
         System.out.printf("%s, %s, %s", country, city, street);
     }
+    public void displayAllData() {
+        System.out.printf("""
+                NAME: %s %s - %d
+                JOB: %s - %.2f
+                ADDRESS: %s, %s, %s
+                """,
+                name, surname, yearOfBirth, jobName, monthlySalaryGross, country, city, street);
+    }
 }
