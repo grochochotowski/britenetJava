@@ -6,6 +6,7 @@ public class Employee {
 
     private String name;
     private String surname;
+    private String employeeId;
     private int yearOfBirth;
     private String jobName;
     private String country;
@@ -17,6 +18,7 @@ public class Employee {
     public Employee(String name, String surname, int yearOfBirth, String jobName, String country, String city, String street, double monthlySalaryGross) {
         this.name = name;
         this.surname = surname;
+        this.employeeId = EmployeeHelper.generateEmployeeID(name, surname);
         this.yearOfBirth = yearOfBirth;
         this.jobName = jobName;
         this.country = country;
@@ -32,6 +34,7 @@ public class Employee {
 
     public String getName() { return name; }
     public String getSurname() { return surname; }
+    public String getEmployeeId() { return employeeId; }
     public int getYearOfBirth() { return yearOfBirth; }
     public String getJobName() { return jobName; }
     public String getCountry() { return country; }
@@ -46,6 +49,7 @@ public class Employee {
 
     public void setName(String name) { this.name = name; }
     public void setSurname(String surname) { this.surname = surname; }
+    public void setEmployeeId(String employeeId) { this.employeeId = employeeId; }
     public void setYearOfBirth(int yearOfBirth) { this.yearOfBirth = yearOfBirth; }
     public void setJobName(String jobName) { this.jobName = jobName; }
     public void setCountry(String country) { this.country = country; }

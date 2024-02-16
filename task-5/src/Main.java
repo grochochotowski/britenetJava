@@ -30,5 +30,13 @@ public class Main {
         System.out.printf("Monthly net income of employee 1: %.2f\n", employee1.calculateMonthlySalaryNet());
         System.out.printf("Annual net income of employee 1: %.2f\n", employee1.calculateNetIncome());
         System.out.printf("6 months net income of employee 2: %.2f\n\n", employee2.calculateNetIncome(6));
+
+        // test helper
+        System.out.printf("Annual salary (3000/month): %.2f\n", EmployeeHelper.calculateYearlySalary(3000));
+        System.out.printf("Is eligible for promotion (5 years worked): %s\n", EmployeeHelper.isEligibleForPromotion(5) ? "YES" : "NO");
+        System.out.printf("Is eligible for promotion (6 years worked): %s\n", EmployeeHelper.isEligibleForPromotion(6) ? "YES" : "NO");
+        System.out.printf("Get employee 1 id: %s %s - %s\n", employee1.getName(), employee1.getSurname(), employee1.getEmployeeId());
+        System.out.printf("Get employee 2 id: %s %s - %s\n", employee2.getName(), employee2.getSurname(), employee2.getEmployeeId());
+
     }
 }
