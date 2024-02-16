@@ -93,7 +93,7 @@ public class Employee {
     }
 
     public double calculateMonthlySalaryNet() {
-        return minimalPayment * (100-tax);
+        return monthlySalaryGross * (100-tax) / 100;
     }
     public double calculateNetIncome() {
         return this.calculateMonthlySalaryNet()*12;
