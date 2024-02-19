@@ -34,6 +34,6 @@ public class Ex1 {
         // test children methods
         System.out.println("\n===============CHILDREN METHODS===============");
         System.out.println("white (calculateAnnualSalary): " + whiteWorker.calculateAnnualSalary());
-        System.out.println("blue: (calculatePayment)" + blueWorker.calculatePayment());
+        System.out.println("blue: (calculatePayment): " + blueWorker.calculatePayment());
     }
 }
