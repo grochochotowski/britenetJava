@@ -1,4 +1,4 @@
-public class Pojazd {
+public class Vehicle {
     // variables
     private String model;
     private String mark;
