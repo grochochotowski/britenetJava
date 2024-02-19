@@ -18,9 +18,9 @@ public class AgriculturalMachine extends Vehicle{
     // toString
     @Override
     public String toString() {
-        return "Car{" +
+        return "AgriculturalMachine{" +
                 super.toString() +
-                "type='" + type + '\'' +
+                "subCategory='" + subCategory + '\'' +
                 '}';
     }
 }
