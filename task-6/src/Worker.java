@@ -9,4 +9,19 @@ public class Worker {
     private String company;
     private String occuption;
 
+    // constructor
+
+
+    // getters
+
+
+    // setters
+
+
+    // toString & display
+
+
+    // calculate
+
+
 }
