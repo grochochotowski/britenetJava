@@ -7,6 +7,8 @@ public class Vehicle {
     private double price;
 
     // constructor
+    public Vehicle() { }
+
     public Vehicle(String model, String mark, String color, String state, double price) {
         this.model = model;
         this.mark = mark;
@@ -28,4 +30,16 @@ public class Vehicle {
     public void setColor(String color) { this.color = color; }
     public void setState(String state) { this.state = state; }
     public void setPrice(double price) { this.price = price; }
+
+    // toString
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "model='" + model + '\'' +
+                ", mark='" + mark + '\'' +
+                ", color='" + color + '\'' +
+                ", state='" + state + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
