@@ -39,7 +39,6 @@ public class Vehicle {
                 ", mark='" + mark + '\'' +
                 ", color='" + color + '\'' +
                 ", state='" + state + '\'' +
-                ", price=" + price +
-                '}';
+                ", price=" + price;
     }
 }
