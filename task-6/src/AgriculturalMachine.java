@@ -20,7 +20,7 @@ public class AgriculturalMachine extends Vehicle{
     public String toString() {
         return "AgriculturalMachine{" +
                 super.toString() +
-                "subCategory='" + subCategory + '\'' +
+                ", subCategory='" + subCategory + '\'' +
                 '}';
     }
 }
