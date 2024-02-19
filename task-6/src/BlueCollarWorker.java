@@ -1,2 +1,2 @@
-public class BlueCollarWorker {
+public class BlueCollarWorker extends Worker{
 }
