@@ -54,4 +54,9 @@ public class Publication {
     public void sell(int n) {
         this.quantity -= n;
     }
+
+    // difference
+    public static double incomeDiff(Publication p1, Publication p2) {
+        return p1.getQuantity()*p1.getPrice()-p2.getQuantity() * p2.getPrice();
+    }
 }
