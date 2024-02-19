@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class CommissionWorker extends Worker{
 
     // variables
@@ -6,7 +8,6 @@ public class CommissionWorker extends Worker{
     // constructor
     public CommissionWorker(String name, String surname, String PESEL, int dateOfBirth, int dateOfEmployment, char sex, String company, String occupation, double[] monthlySalaries) {
         super(name, surname, PESEL, dateOfBirth, dateOfEmployment, sex, company, occupation);
-        this.monthlySalaries = monthlySalaries;
     }
 
     // getters & setters
@@ -14,7 +15,14 @@ public class CommissionWorker extends Worker{
     public void setMonthlySalaries(double[] monthlySalaries) { this.monthlySalaries = monthlySalaries; }
 
     // generate
-
+    public void generateSalaries(int n) {
+        Random random = new Random();
+        monthlySalaries = new double[n];
+        for (int i = 0; i < n; i++) {
+            double salary = 4100 + random.nextDouble() * 15000;
+            monthlySalaries[i] = salary;
+        }
+    }
 
     // calculate
     public double calculateTotalIncome() {
