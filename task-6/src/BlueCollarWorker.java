@@ -19,8 +19,17 @@ public class BlueCollarWorker extends Worker{
     // setters
     public void setPaymentPerHour(double paymentPerHour) { this.paymentPerHour = paymentPerHour; }
     public void setHoursWorked(double hoursWorked) { this.hoursWorked = hoursWorked; }
-    
+
     // toString & display
+    @Override
+    public String toString() {
+        String text = "BlueCollarWorker" +
+                super.toString() +
+                "paymentPerHour=" + paymentPerHour +
+                ", hoursWorked=" + hoursWorked +
+                '}';
+        return text;
+    }
 
 
     // calculate
