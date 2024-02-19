@@ -44,6 +44,19 @@ public class Worker {
 
 
     // toString & display
+    @Override
+    public String toString() {
+        return "Worker{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", PESEL='" + PESEL + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", dateOfEmployment=" + dateOfEmployment +
+                ", sex=" + sex +
+                ", company='" + company + '\'' +
+                ", occupation='" + occupation + '\'' +
+                '}';
+    }
 
 
     // calculate
