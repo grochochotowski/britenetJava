@@ -76,4 +76,8 @@ public class Worker {
         return Calendar.getInstance().get(Calendar.YEAR) - dateOfBirth;
     }
 
+    public int returnJobSeniority() {
+        return Calendar.getInstance().get(Calendar.YEAR) - dateOfEmployment;
+    }
+
 }
