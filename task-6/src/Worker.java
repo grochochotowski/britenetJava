@@ -48,7 +48,7 @@ public class Worker {
     // toString & display
     @Override
     public String toString() {
-        return "Worker{" +
+        return "{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", PESEL='" + PESEL + '\'' +
