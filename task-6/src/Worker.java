@@ -33,6 +33,14 @@ public class Worker {
 
 
     // setters
+    public void setName(String name) { this.name = name; }
+    public void setSurname(String surname) { this.surname = surname; }
+    public void setPESEL(String PESEL) { this.PESEL = PESEL; }
+    public void setDateOfBirth(int dateOfBirth) { this.dateOfBirth = dateOfBirth; }
+    public void setDateOfEmployment(int dateOfEmployment) { this.dateOfEmployment = dateOfEmployment; }
+    public void setSex(char sex) { this.sex = sex; }
+    public void setCompany(String company) { this.company = company; }
+    public void setOccupation(String occupation) { this.occupation = occupation; }
 
 
     // toString & display
