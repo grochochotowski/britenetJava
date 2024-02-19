@@ -1,3 +1,5 @@
+import java.util.Calendar;
+
 public class Worker {
     // variables
     private String name;
@@ -70,6 +72,8 @@ public class Worker {
     }
 
     // calculate
-
+    public int getAge() {
+        return Calendar.getInstance().get(Calendar.YEAR) - dateOfBirth;
+    }
 
 }
