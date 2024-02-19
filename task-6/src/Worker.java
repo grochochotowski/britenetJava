@@ -10,8 +10,17 @@ public class Worker {
     private String occuption;
 
     // constructor
-
-
+    public Worker(String name, String surname, String PESEL, int dateOfBirth, int dateOfEmployment, char sex, String company, String occuption) {
+        this.name = name;
+        this.surname = surname;
+        this.PESEL = PESEL;
+        this.dateOfBirth = dateOfBirth;
+        this.dateOfEmployment = dateOfEmployment;
+        this.sex = sex;
+        this.company = company;
+        this.occuption = occuption;
+    }
+    
     // getters
 
 
