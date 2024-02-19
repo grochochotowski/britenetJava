@@ -17,5 +17,11 @@ public class Publication {
         this.quantity = quantity;
     }
 
-    
+    // getters
+    public String getTitle() { return title; }
+    public String getPublisher() { return publisher; }
+    public int getYear() { return year; }
+    public String getIdent() { return ident; }
+    public double getPrice() { return price; }
+    public int getQuantity() { return quantity; }
 }
