@@ -28,10 +28,9 @@ public class WhiteCollarWorker extends Worker{
     public void display() {
         super.display();
         String text = """
-               PAYMENT: %.2f/h
-               WORKED: %.2f
+               SALARY: %.2f
                """;
-        System.out.printf(text, paymentPerHour, hoursWorked);
+        System.out.printf(text, salary);
     }
 
     // calculate
