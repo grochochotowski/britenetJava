@@ -18,10 +18,9 @@ public class WhiteCollarWorker extends Worker{
     // toString & display
     @Override
     public String toString() {
-        String text = "BlueCollarWorker" +
+        String text = "WhiteCollarWorker" +
                 super.toString() +
-                "paymentPerHour=" + paymentPerHour +
-                ", hoursWorked=" + hoursWorked +
+                ", salary=" + salary +
                 '}';
         return text;
     }
