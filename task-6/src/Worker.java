@@ -80,4 +80,8 @@ public class Worker {
         return Calendar.getInstance().get(Calendar.YEAR) - dateOfEmployment;
     }
 
+    public int calculateTimeToRetirement() {
+        return this.sex == 'm' ? 65 - getAge() : 60 - getAge();
+    }
+
 }
