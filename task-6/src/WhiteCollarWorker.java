@@ -1,15 +1,12 @@
 public class WhiteCollarWorker extends Worker{
     // variables
-    private double paymentPerHour;
-    private double hoursWorked;
+    private double salary;
 
     // constructor
     public WhiteCollarWorker(String name, String surname, String PESEL, int dateOfBirth,
-                            int dateOfEmployment, char sex, String company, String occupation,
-                            double paymentPerHour, double hoursWorked) {
+                            int dateOfEmployment, char sex, String company, String occupation, double salary) {
         super(name, surname, PESEL, dateOfBirth, dateOfEmployment, sex, company, occupation);
-        this.paymentPerHour = paymentPerHour;
-        this.hoursWorked = hoursWorked;
+        this.salary = salary;
     }
 
     // getters
