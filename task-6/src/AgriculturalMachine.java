@@ -12,8 +12,8 @@ public class AgriculturalMachine extends Vehicle{
     }
 
     // getter & setter
-    public String getType() { return type; }
-    public void setType(String type) { this.type = type; }
+    public String getSubCategory() { return subCategory; }
+    public void setSubCategory(String subCategory) { this.subCategory = subCategory; }
 
     // toString
     @Override
