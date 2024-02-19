@@ -11,5 +11,11 @@ public class Ex1 {
         System.out.println("===============TO STRING===============");
         System.out.println(whiteWorker.toString());
         System.out.println(blueWorker.toString());
+
+        // test display
+        System.out.println("\n===============DISPLAY===============");
+        whiteWorker.display();
+        System.out.print("\n");
+        blueWorker.display();
     }
 }
