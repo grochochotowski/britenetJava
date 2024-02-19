@@ -41,6 +41,8 @@ public class BlueCollarWorker extends Worker{
     }
 
     // calculate
-
+    public double calculatePayment() {
+        return hoursWorked * paymentPerHour;
+    }
 
 }
