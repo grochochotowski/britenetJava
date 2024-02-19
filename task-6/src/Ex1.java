@@ -24,8 +24,8 @@ public class Ex1 {
         System.out.println(blueWorker.getAge());
 
         System.out.println("\n===============JOB SENIORITY===============");
-        System.out.println(whiteWorker.toString());
-        System.out.println(blueWorker.toString());
+        System.out.println(whiteWorker.returnJobSeniority());
+        System.out.println(blueWorker.returnJobSeniority());
 
         System.out.println("\n===============TIME TO RETIREMENT===============");
         System.out.println(whiteWorker.toString());
