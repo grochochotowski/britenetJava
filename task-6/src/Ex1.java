@@ -6,9 +6,11 @@ public class Ex1 {
         BlueCollarWorker blueWorker = new BlueCollarWorker("Blue", "Worker", "00000000000",
                 1999, 2010,'m', "H&M", "shop assistant",
                 27.70, 25.5);
+        CommissionWorker commWorker = new CommissionWorker("Blue", "Worker", "00000000000",
+                1999, 2010,'m', "H&M", "shop assistant");
 
         // test toString
-        System.out.println("===============TO STRING===============");
+        System.out.println("\n===============TO STRING===============");
         System.out.println(whiteWorker.toString());
         System.out.println(blueWorker.toString());
 
@@ -35,5 +37,12 @@ public class Ex1 {
         System.out.println("\n===============CHILDREN METHODS===============");
         System.out.println("white (calculateAnnualSalary): " + whiteWorker.calculateAnnualSalary());
         System.out.println("blue: (calculatePayment): " + blueWorker.calculatePayment());
+
+        // commission worker
+        System.out.println("\n===============COMMISSION WORKER===============");
+        commWorker.generateSalaries(20);
+        System.out.println("total: " + commWorker.calculateTotalIncome());
+        System.out.println("average: " + commWorker.calculateAverageSalary());
+        System.out.println("bigger than 7000: " + commWorker.findBiggerSalaries(7000));
     }
 }
