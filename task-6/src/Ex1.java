@@ -9,7 +9,7 @@ public class Ex1 {
 
         // test toString
         System.out.println("===============TO STRING===============");
-        System.out.printf("white:\n%s", whiteWorker.toString());
-        System.out.printf("\nblue:\n%s", blueWorker.toString());
+        System.out.println(whiteWorker.toString());
+        System.out.println(blueWorker.toString());
     }
 }
