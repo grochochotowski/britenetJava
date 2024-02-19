@@ -32,4 +32,21 @@ public class Publication {
     public void setIdent(String ident) { this.ident = ident; }
     public void setPrice(double price) { this.price = price; }
     public void setQuantity(int quantity) { this.quantity = quantity; }
+
+    // display
+    public void display() {
+        String text =
+                """
+                TITLE: %s
+                PUBLISHER: %s
+                YEAR: %d
+                IDENT: %s
+                PRICE: %.2f
+                QUANTITY: %d
+                """;
+        System.out.printf(text, title, publisher, year, ident, price, quantity);
+    }
+
+    // quantity
+
 }
