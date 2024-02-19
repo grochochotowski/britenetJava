@@ -20,11 +20,16 @@ public class Ex1 {
 
         // test calculate
         System.out.println("\n===============GET AGE===============");
+        System.out.println(whiteWorker.getAge());
+        System.out.println(blueWorker.getAge());
 
         System.out.println("\n===============JOB SENIORITY===============");
+        System.out.println(whiteWorker.toString());
+        System.out.println(blueWorker.toString());
 
         System.out.println("\n===============TIME TO RETIREMENT===============");
-
+        System.out.println(whiteWorker.toString());
+        System.out.println(blueWorker.toString());
 
     }
 }
