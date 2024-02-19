@@ -34,8 +34,8 @@ public class WhiteCollarWorker extends Worker{
     }
 
     // calculate
-    public double calculatePayment() {
-        return hoursWorked * paymentPerHour;
+    public double calculateAnnualSalary() {
+        return 12 * salary;
     }
 
 }
