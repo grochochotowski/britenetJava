@@ -10,12 +10,10 @@ public class WhiteCollarWorker extends Worker{
     }
 
     // getters
-    public double getPaymentPerHour() { return paymentPerHour; }
-    public double getHoursWorked() { return hoursWorked; }
+    public double getSalary() { return salary; }
 
     // setters
-    public void setPaymentPerHour(double paymentPerHour) { this.paymentPerHour = paymentPerHour; }
-    public void setHoursWorked(double hoursWorked) { this.hoursWorked = hoursWorked; }
+    public void setSalary(double salary) { this.salary = salary; }
 
     // toString & display
     @Override
