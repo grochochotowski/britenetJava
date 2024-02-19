@@ -17,8 +17,9 @@ public class BlueCollarWorker extends Worker{
     public double getHoursWorked() { return hoursWorked; }
 
     // setters
-
-
+    public void setPaymentPerHour(double paymentPerHour) { this.paymentPerHour = paymentPerHour; }
+    public void setHoursWorked(double hoursWorked) { this.hoursWorked = hoursWorked; }
+    
     // toString & display
 
 
