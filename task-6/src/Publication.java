@@ -52,6 +52,6 @@ public class Publication {
         this.quantity += n;
     }
     public void sell(int n) {
-        this.quantity += n;
+        this.quantity -= n;
     }
 }
