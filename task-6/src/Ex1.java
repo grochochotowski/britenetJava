@@ -5,7 +5,7 @@ public class Ex1 {
                 1999, 2010,'m', "H&M", "shop assistant",
                 27.70, 25.5);
         WhiteCollarWorker whiteWorker = new WhiteCollarWorker("White", "Worker", "11111111111",
-                2995, 2014,'f', "Google", "dev", 9999.99);
+                1995, 2014,'f', "Google", "dev", 9999.99);
 
         // test toString
         System.out.println("===============TO STRING===============");
