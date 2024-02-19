@@ -1,6 +1,7 @@
 public class BlueCollarWorker extends Worker{
     // variables
-
+    private double paymentPerHour;
+    private double hoursWorked;
 
     // constructor
 
@@ -16,5 +17,5 @@ public class BlueCollarWorker extends Worker{
 
     // calculate
 
-    
+
 }
