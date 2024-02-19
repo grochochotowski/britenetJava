@@ -24,4 +24,12 @@ public class Publication {
     public String getIdent() { return ident; }
     public double getPrice() { return price; }
     public int getQuantity() { return quantity; }
+
+    // setters
+    public void setTitle(String title) { this.title = title; }
+    public void setPublisher(String publisher) { this.publisher = publisher; }
+    public void setYear(int year) { this.year = year; }
+    public void setIdent(String ident) { this.ident = ident; }
+    public void setPrice(double price) { this.price = price; }
+    public void setQuantity(int quantity) { this.quantity = quantity; }
 }
