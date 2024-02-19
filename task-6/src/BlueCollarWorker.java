@@ -25,7 +25,7 @@ public class BlueCollarWorker extends Worker{
     public String toString() {
         String text = "BlueCollarWorker" +
                 super.toString() +
-                "paymentPerHour=" + paymentPerHour +
+                ", paymentPerHour=" + paymentPerHour +
                 ", hoursWorked=" + hoursWorked +
                 '}';
         return text;
