@@ -6,7 +6,7 @@ public class CommissionWorker extends Worker{
     private double[] monthlySalaries;
 
     // constructor
-    public CommissionWorker(String name, String surname, String PESEL, int dateOfBirth, int dateOfEmployment, char sex, String company, String occupation, double[] monthlySalaries) {
+    public CommissionWorker(String name, String surname, String PESEL, int dateOfBirth, int dateOfEmployment, char sex, String company, String occupation) {
         super(name, surname, PESEL, dateOfBirth, dateOfEmployment, sex, company, occupation);
     }
 
