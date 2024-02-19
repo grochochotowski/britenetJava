@@ -58,6 +58,17 @@ public class Worker {
                 '}';
     }
 
+    public void display() {
+        String text = """
+               NAME: %s %s
+               PESEL: %s
+               SEX: %s" +
+               DATE OF BIRTH: %d
+               DATE OF EMPLOYMENT
+               JOB: %s at %s
+               """;
+        System.out.printf(text, name, surname, PESEL, sex=='m' ? "male" : "female", dateOfBirth, dateOfEmployment, occupation, company);
+    }
 
     // calculate
 
