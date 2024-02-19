@@ -6,6 +6,8 @@ public class Ex1 {
         BlueCollarWorker blueWorker = new BlueCollarWorker("Blue", "Worker", "00000000000",
                 1999, 2010,'m', "H&M", "shop assistant",
                 27.70, 25.5);
+        CommissionWorker commWorker = new CommissionWorker("Blue", "Worker", "00000000000",
+                1999, 2010,'m', "H&M", "shop assistant");
 
         // test toString
         System.out.println("===============TO STRING===============");
