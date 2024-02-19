@@ -6,7 +6,7 @@ public class Ex2 {
 
         // test display
 
-        // test 
+        // test
 
         // test children methods
     }
