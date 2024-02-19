@@ -22,6 +22,5 @@ public class Car extends Vehicle{
                 super.toString() +
                 "type='" + type + '\'' +
                 '}';
-
     }
 }
