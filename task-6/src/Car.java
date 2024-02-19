@@ -14,4 +14,14 @@ public class Car extends Vehicle{
     // getter & setter
     public String getType() { return type; }
     public void setType(String type) { this.type = type; }
+
+    // toString
+    @Override
+    public String toString() {
+        return "Car{" +
+                super.toString() +
+                "type='" + type + '\'' +
+                '}';
+
+    }
 }

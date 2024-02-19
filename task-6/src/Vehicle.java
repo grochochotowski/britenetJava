@@ -34,8 +34,7 @@ public class Vehicle {
     // toString
     @Override
     public String toString() {
-        return "Vehicle{" +
-                "model='" + model + '\'' +
+        return "model='" + model + '\'' +
                 ", mark='" + mark + '\'' +
                 ", color='" + color + '\'' +
                 ", state='" + state + '\'' +
