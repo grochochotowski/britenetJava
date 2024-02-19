@@ -12,4 +12,15 @@ public class CommissionWorker extends Worker{
     // getters & setters
     public double[] getMonthlySalaries() { return monthlySalaries; }
     public void setMonthlySalaries(double[] monthlySalaries) { this.monthlySalaries = monthlySalaries; }
+
+    // calculate
+    public double calculateAverageSalary() {
+        int n = 0;
+        double sum = 0;
+        for (double salary : monthlySalaries) {
+            sum += salary;
+            n++;
+        }
+        return sum/n;
+    }
 }
