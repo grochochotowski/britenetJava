@@ -35,7 +35,7 @@ public class CommissionWorker extends Worker{
     }
 
     // find
-    public double findBiggerSalaries(double sal) {
+    public int findBiggerSalaries(double sal) {
         int num = 0;
         for (double salary : monthlySalaries)
             if (salary > sal) num++;
