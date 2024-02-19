@@ -13,6 +13,9 @@ public class CommissionWorker extends Worker{
     public double[] getMonthlySalaries() { return monthlySalaries; }
     public void setMonthlySalaries(double[] monthlySalaries) { this.monthlySalaries = monthlySalaries; }
 
+    // generate
+
+
     // calculate
     public double calculateTotalIncome() {
         double sum = 0;
@@ -23,4 +26,11 @@ public class CommissionWorker extends Worker{
         return calculateTotalIncome()/monthlySalaries.length;
     }
 
+    // find
+    public double findBiggerSalaries(double sal) {
+        int num = 0;
+        for (double salary : monthlySalaries)
+            if (salary > sal) num++;
+        return num;
+    }
 }
