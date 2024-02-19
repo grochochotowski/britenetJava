@@ -54,8 +54,7 @@ public class Worker {
                 ", dateOfEmployment=" + dateOfEmployment +
                 ", sex=" + sex +
                 ", company='" + company + '\'' +
-                ", occupation='" + occupation + '\'' +
-                '}';
+                ", occupation='" + occupation + '\'';
     }
 
     public void display() {
