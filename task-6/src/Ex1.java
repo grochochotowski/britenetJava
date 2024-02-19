@@ -17,5 +17,14 @@ public class Ex1 {
         whiteWorker.display();
         System.out.print("\n");
         blueWorker.display();
+
+        // test calculate
+        System.out.println("\n===============GET AGE===============");
+
+        System.out.println("\n===============JOB SENIORITY===============");
+
+        System.out.println("\n===============TIME TO RETIREMENT===============");
+
+
     }
 }
