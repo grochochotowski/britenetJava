@@ -63,9 +63,9 @@ public class Worker {
         String text = """
                NAME: %s %s
                PESEL: %s
-               SEX: %s" +
+               SEX: %s"
                DATE OF BIRTH: %d
-               DATE OF EMPLOYMENT
+               DATE OF EMPLOYMENT: %d
                JOB: %s at %s
                """;
         System.out.printf(text, name, surname, PESEL, sex=='m' ? "male" : "female", dateOfBirth, dateOfEmployment, occupation, company);
