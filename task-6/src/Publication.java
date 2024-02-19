@@ -48,5 +48,10 @@ public class Publication {
     }
 
     // quantity
-
+    public void buy(int n) {
+        this.quantity += n;
+    }
+    public void sell(int n) {
+        this.quantity += n;
+    }
 }
