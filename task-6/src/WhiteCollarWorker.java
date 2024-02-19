@@ -1,10 +1,10 @@
-public class BlueCollarWorker extends Worker{
+public class WhiteCollarWorker extends Worker{
     // variables
     private double paymentPerHour;
     private double hoursWorked;
 
     // constructor
-    public BlueCollarWorker(String name, String surname, String PESEL, int dateOfBirth,
+    public WhiteCollarWorker(String name, String surname, String PESEL, int dateOfBirth,
                             int dateOfEmployment, char sex, String company, String occupation,
                             double paymentPerHour, double hoursWorked) {
         super(name, surname, PESEL, dateOfBirth, dateOfEmployment, sex, company, occupation);
