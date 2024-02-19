@@ -31,6 +31,14 @@ public class BlueCollarWorker extends Worker{
         return text;
     }
 
+    public void display() {
+        super.display();
+        String text = """
+               PAYMENT: %.2f/h
+               WORKED: %.2f
+               """;
+        System.out.printf(text, paymentPerHour, hoursWorked);
+    }
 
     // calculate
 
