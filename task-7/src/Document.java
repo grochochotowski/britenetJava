@@ -1,4 +1,4 @@
-public class Document {
+public abstract class Document {
     // variables
     protected String date;
     protected String city;
@@ -30,6 +30,7 @@ public class Document {
                 """;
         System.out.printf(text, city, date, contractor1, contractor2, isSigned ? "YES" : "NO");
     }
+    public abstract void displayDetailedData();
 
     // return
 
