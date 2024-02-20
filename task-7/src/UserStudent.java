@@ -1,9 +1,10 @@
 public class UserStudent extends User{
     private int year;
 
-    public UserStudent(String name, String surname, double fee, int year) {
-        super(name, surname,0);
+    public UserStudent(String name, String surname, int year) {
+        super(name, surname);
         this.year = year;
+        this.fee = 0;
     }
 
     public String returnDescription() {

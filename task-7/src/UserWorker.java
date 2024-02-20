@@ -1,9 +1,10 @@
 public class UserWorker extends User{
     private String position;
 
-    public UserWorker(String name, String surname, double fee, String position) {
-        super(name, surname, 10);
+    public UserWorker(String name, String surname, String position) {
+        super(name, surname);
         this.position = position;
+        this.fee = 10;
     }
 
     public String returnDescription() {
