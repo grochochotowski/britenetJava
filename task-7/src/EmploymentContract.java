@@ -39,4 +39,9 @@ public class EmploymentContract extends Document{
         System.out.println("Contract of employment has been signed");
     };
 
+    // salary
+    public boolean isSalaryGreater(int checkWith) {
+        return salary > checkWith;
+    }
+
 }
