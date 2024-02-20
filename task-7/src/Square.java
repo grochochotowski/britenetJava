@@ -1,4 +1,4 @@
-public class Square {
+public class Square extends Shape {
     private double sideLength;
 
     public Square(double sideLength) {
