@@ -7,7 +7,17 @@ public class Ex3 {
                 "Twarz");
 
         // test
-        
+        System.out.println(food.CalculatePrice());
+        food.display();
+        System.out.print("\n");
+
+        System.out.println(elec.CalculatePrice());
+        elec.display();
+        System.out.print("\n");
+
+        System.out.println(cosm.CalculatePrice());
+        cosm.display();
+        System.out.print("\n");
 
     }
 }
