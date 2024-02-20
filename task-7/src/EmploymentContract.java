@@ -5,9 +5,9 @@ public class EmploymentContract extends Document{
     private String endDate;
 
     // constructor
-    public EmploymentContract(String date, String city, String contractor1, String contractor2, boolean isSigned,
-                              double salary, String startDate, String endDate) {
-        super(date, city, contractor1, contractor2, isSigned);
+    public EmploymentContract(String date, String city, String contractor1, String contractor2, double salary,
+                              String startDate, String endDate) {
+        super(date, city, contractor1, contractor2);
         this.salary = salary;
         this.startDate = startDate;
         this.endDate = endDate;

@@ -4,8 +4,8 @@ public class Invoice extends Document{
     private double value;
 
     // constructor
-    public Invoice(String date, String city, String contractor1, String contractor2, boolean isSigned, int number, double value) {
-        super(date, city, contractor1, contractor2, isSigned);
+    public Invoice(String date, String city, String contractor1, String contractor2, int number, double value) {
+        super(date, city, contractor1, contractor2);
         this.number = number;
         this.value = value;
     }

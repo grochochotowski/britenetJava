@@ -7,7 +7,7 @@ public abstract class Document {
     protected boolean isSigned ;
 
     // constructors
-    public Document(String date, String city, String contractor1, String contractor2, boolean isSigned) {
+    public Document(String date, String city, String contractor1, String contractor2) {
         this.date = date;
         this.city = city;
         this.contractor1 = contractor1;
