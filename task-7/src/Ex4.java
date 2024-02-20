@@ -5,7 +5,8 @@ public class Ex4 {
         UserWorker worker = new UserWorker("John", "Not", "CEO");
 
         // test
-
+        System.out.print(student.returnDescription() + "\n");
+        System.out.print(worker.returnDescription());
 
     }
 }
