@@ -7,17 +7,17 @@ public class Ex3 {
                 "Face");
 
         // test
-        System.out.println(food.CalculatePrice());
+        System.out.print(food.CalculatePrice() + "\n\n");
         food.display();
-        System.out.print("\n");
+        System.out.print("\n\n");
 
-        System.out.println(elec.CalculatePrice());
+        System.out.print(elec.CalculatePrice() + "\n\n");
         elec.display();
-        System.out.print("\n");
+        System.out.print("\n\n");
 
-        System.out.println(cosm.CalculatePrice());
+        System.out.print(cosm.CalculatePrice() + "\n\n");
         cosm.display();
-        System.out.print("\n");
+        System.out.print("\n\n");
 
     }
 }
