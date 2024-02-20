@@ -9,5 +9,5 @@ public abstract class User {
         this.fee = fee;
     }
 
-    
+    public abstract String returnDescription();
 }
