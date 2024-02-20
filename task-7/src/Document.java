@@ -33,6 +33,6 @@ public abstract class Document {
     public abstract void displayDetailedData();
 
     // return
-
+    public abstract String returnDocumentType();
 
 }
