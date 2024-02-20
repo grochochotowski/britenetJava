@@ -1,10 +1,10 @@
 public class Ex3 {
     public static void main(String[] args) {
         // example shapes
-        FoodProduct food = new FoodProduct("Banan", 1.99, "2025", "Owoc");
+        FoodProduct food = new FoodProduct("Banana", 1.99, "2025", "Fruit");
         ElectronicProduct elec = new ElectronicProduct("PC", 1999.99, 24, "HP");
-        CosmeticProduct cosm = new CosmeticProduct("Krem", 1.99, "Mleko i cos - nie wiem, nie znam sie",
-                "Twarz");
+        CosmeticProduct cosm = new CosmeticProduct("Krem", 1.99, "I dont know much about this",
+                "Face");
 
         // test
         System.out.println(food.CalculatePrice());
