@@ -17,9 +17,20 @@ public class Document {
 
     // display
     public void displayContractors() {
-        System.out.printf("Document drawn between %s and %s", contractor1, contractor2);
+        System.out.printf("\nDocument drawn between %s and %s\n", contractor1, contractor2);
     }
-    
+
+    public void displayBasicData() {
+        String text =
+                """
+                Where: %s
+                When: %s
+                Between: %s and %s
+                isSigned: %s
+                """;
+        System.out.printf(text, city, date, contractor1, contractor2, isSigned ? "YES" : "NO");
+    }
+
     // return
 
 
