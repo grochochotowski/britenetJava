@@ -35,4 +35,6 @@ public abstract class Document {
     // return
     public abstract String returnDocumentType();
 
+    // sign
+    public abstract void Sign();
 }
