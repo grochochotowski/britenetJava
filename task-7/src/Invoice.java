@@ -32,7 +32,8 @@ public class Invoice extends Document{
 
     // sign
     public void Sign() {
-
+        this.isSigned = true;
+        System.out.println("Invoice has been signed");
     };
 
 }
