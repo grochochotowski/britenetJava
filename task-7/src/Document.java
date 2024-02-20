@@ -14,4 +14,11 @@ public class Document {
         this.contractor2 = contractor2;
         this.isSigned = false;
     }
+
+    // display
+    
+
+    // return
+
+
 }
