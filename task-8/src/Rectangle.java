@@ -10,16 +10,16 @@ public class Rectangle implements GeometricShape {
 
     @Override
     public void calculateArea() {
-
+        System.out.println("Area: " + (width * height));
     }
 
     @Override
     public void calculateCircumference() {
-
+        System.out.println("Circumference: " + (2*width + 2*height));
     }
 
     @Override
     public void draw() {
-
+        System.out.println("Drawing rectangle");
     }
 }
