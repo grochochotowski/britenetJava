@@ -5,5 +5,16 @@ public abstract class Animal {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                '}';
+    }
+
     public abstract String getType();
 }
