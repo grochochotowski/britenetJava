@@ -11,6 +11,6 @@ public class Car implements Moveable{
     }
     @Override
     public void stop() {
-        System.out.printf("%s STOPPED". mark);
+        System.out.printf("%s STOPPED", mark);
     }
 }
