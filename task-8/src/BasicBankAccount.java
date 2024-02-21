@@ -69,5 +69,13 @@ public class BasicBankAccount implements Playable{
         this.customerNumberId = customerNumberId;
     }
 
-
+    @Override
+    public String toString() {
+        return "BasicBankAccount{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", accountBalance=" + accountBalance +
+                ", customerNumberId=" + customerNumberId +
+                '}';
+    }
 }
