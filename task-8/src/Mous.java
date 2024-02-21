@@ -1,2 +1,2 @@
-public class Mous {
+public class Mous implements Animal2 {
 }

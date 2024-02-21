@@ -1,2 +1,2 @@
-public class Duck {
+public class Duck implements Animal2 {
 }
