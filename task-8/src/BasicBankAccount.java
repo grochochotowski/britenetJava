@@ -33,4 +33,7 @@ public class BasicBankAccount implements Playable{
                 ", customerNumberId=" + customerNumberId +
                 '}');
     }
+    public void withdrawAll() {
+        this.accountBalance = 0;
+    }
 }
