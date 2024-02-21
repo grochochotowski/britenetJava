@@ -15,4 +15,9 @@ public class Square implements GeometricShape {
     public void calculateCircumference() {
         System.out.println("Circumference: " + (4*side));
     }
+
+    @Override
+    public void draw() {
+        System.out.println("Drawing circle");
+    }
 }
