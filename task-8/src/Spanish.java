@@ -1,16 +1,16 @@
 public class Spanish implements Language{
     @Override
     public String sayGreeting() {
-        return null;
+        return "Hola";
     }
 
     @Override
     public String sayGoodbye() {
-        return null;
+        return "Adios";
     }
 
     @Override
     public String sayThanks() {
-        return null;
+        return "Gracias";
     }
 }

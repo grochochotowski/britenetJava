@@ -1,16 +1,16 @@
 public class Polish implements Language{
     @Override
     public String sayGreeting() {
-        return null;
+        return "Czesc";
     }
 
     @Override
     public String sayGoodbye() {
-        return null;
+        return "Narazie";
     }
 
     @Override
     public String sayThanks() {
-        return null;
+        return "Dzieki";
     }
 }
