@@ -24,4 +24,13 @@ public class BasicBankAccount implements Playable{
         this.customerNumberId = nextCustomerIdAvailable;
         nextCustomerIdAvailable += 2;
     }
+
+    public void displayAllInfo() {
+        System.out.printf("BasicBankAccount{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", accountBalance=" + accountBalance +
+                ", customerNumberId=" + customerNumberId +
+                '}');
+    }
 }
