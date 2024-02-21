@@ -7,10 +7,10 @@ public class Car implements Moveable{
 
     @Override
     public void start() {
-        System.out.println("BIKE STARTED");
+        System.out.printf("%s STARTED", mark);
     }
     @Override
     public void stop() {
-        System.out.println("BIKE STOPPED");
+        System.out.printf("%s STOPPED". mark);
     }
 }
