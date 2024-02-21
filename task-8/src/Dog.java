@@ -6,7 +6,7 @@ public class Dog extends Animal implements Moveable, Speakable {
 
     @Override
     public String getType() {
-        return "dog";
+        return "cool dog";
     }
 
     @Override
