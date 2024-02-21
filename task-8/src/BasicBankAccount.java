@@ -16,4 +16,12 @@ public class BasicBankAccount implements Playable{
         }
         return false;
     }
+
+    public BasicBankAccount(String name, String surname, double accountBalance, int customerNumberId) {
+        this.name = name;
+        this.surname = surname;
+        this.accountBalance = accountBalance;
+        this.customerNumberId = nextCustomerIdAvailable;
+        nextCustomerIdAvailable += 2;
+    }
 }
