@@ -1,4 +1,4 @@
-public class Main {
+public class I1Ex1 {
     public static void race(Moveable... moveable) {
         for (Moveable m : moveable) {
             m.start();
