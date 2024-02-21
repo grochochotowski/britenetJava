@@ -2,6 +2,10 @@ public class Circle implements GeometricShape {
 
     private double radius;
 
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
     @Override
     public void calculateArea() {
         System.out.println("Area: " + (Math.PI*radius*radius));
