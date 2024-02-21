@@ -18,4 +18,8 @@ public class Mous implements Animal2 {
     public void sleep() {
         System.out.println("Mouse is sleeping now");
     }
+
+    public void hide() {
+        System.out.println("Hide from a cat");
+    }
 }

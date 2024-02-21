@@ -18,4 +18,8 @@ public class Cow implements Animal2 {
     public void sleep() {
         System.out.println("Cow is sleeping now");
     }
+
+    public void graze() {
+        System.out.println("Cow is grazing in a field");
+    }
 }
