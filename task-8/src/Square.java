@@ -20,4 +20,8 @@ public class Square implements GeometricShape {
     public void draw() {
         System.out.println("Drawing circle");
     }
+
+    public void setSide(double side) {
+        this.side = side;
+    }
 }
