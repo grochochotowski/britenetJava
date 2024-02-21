@@ -20,4 +20,8 @@ public class Circle implements GeometricShape {
     public void draw() {
         System.out.println("Drawing circle");
     }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
 }
