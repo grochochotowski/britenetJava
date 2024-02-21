@@ -36,4 +36,38 @@ public class BasicBankAccount implements Playable{
     public void withdrawAll() {
         this.accountBalance = 0;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public double getAccountBalance() {
+        return accountBalance;
+    }
+
+    public void setAccountBalance(double accountBalance) {
+        this.accountBalance = accountBalance;
+    }
+
+    public int getCustomerNumberId() {
+        return customerNumberId;
+    }
+
+    public void setCustomerNumberId(int customerNumberId) {
+        this.customerNumberId = customerNumberId;
+    }
+
+
 }
