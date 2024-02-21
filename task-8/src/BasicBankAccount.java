@@ -30,7 +30,7 @@ public class BasicBankAccount implements Playable{
                 "name=" + name + '\n' +
                 ", surname='" + surname + '\n' +
                 ", accountBalance=" + accountBalance + '\n' +
-                ", customerNumberId=" + customerNumberId);
+                ", customerNumberId=" + customerNumberId + '\n');
     }
     public void withdrawAll() {
         this.accountBalance = 0;
