@@ -22,4 +22,12 @@ public class Rectangle implements GeometricShape {
     public void draw() {
         System.out.println("Drawing rectangle");
     }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
 }
