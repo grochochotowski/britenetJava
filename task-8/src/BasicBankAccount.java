@@ -26,12 +26,11 @@ public class BasicBankAccount implements Playable{
     }
 
     public void displayAllInfo() {
-        System.out.printf("BasicBankAccount{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", accountBalance=" + accountBalance +
-                ", customerNumberId=" + customerNumberId +
-                '}');
+        System.out.printf(
+                "name=" + name + '\n' +
+                ", surname='" + surname + '\n' +
+                ", accountBalance=" + accountBalance + '\n' +
+                ", customerNumberId=" + customerNumberId);
     }
     public void withdrawAll() {
         this.accountBalance = 0;
