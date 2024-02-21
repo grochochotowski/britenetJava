@@ -5,5 +5,5 @@ public abstract class Animal {
         this.name = name;
     }
 
-    public abstract String getTyp();
+    public abstract String getType();
 }
