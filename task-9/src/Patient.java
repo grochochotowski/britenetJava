@@ -15,6 +15,7 @@ public class Patient {
         this.age = age;
     }
 
+    // getters setters
     public String getName() {
         return name;
     }
@@ -63,6 +64,7 @@ public class Patient {
         this.age = age;
     }
 
+    // methods
     public boolean isHigher(int days) {
         return days > this.daysStaying;
     }
@@ -70,4 +72,6 @@ public class Patient {
     public void addXtraDay() {
         this.daysStaying += 1;
     }
+
+
 }
