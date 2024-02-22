@@ -34,4 +34,10 @@ public class Hospital {
         System.out.printf("%d/%d patients", patients.size(), maxPatients);
     }
 
+    public void displayPatientsFromWard(String ward) {
+        for (Patient patient : patients) {
+            if (patient.wardName.equals(ward)) patient.display();
+        }
+    }
+
 }
