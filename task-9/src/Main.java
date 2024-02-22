@@ -21,6 +21,11 @@ public class Main {
             patients.add(newPatient);
         }
 
+        for (Patient patient : patients) {
+            int newDays = random pls
+            patient.setDaysStaying(newDays);
+        }
+
         for (Patient patient : patients) patient.display();
 
         patients.sort(new Comparator<Patient>() {
@@ -39,6 +44,6 @@ public class Main {
 
         for (Patient patient : patients) patient.display();
 
-        
+
     }
 }
