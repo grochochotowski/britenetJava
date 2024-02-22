@@ -1,0 +1,6 @@
+patient2name;patient2surname;22222222222;BURN WARD;21
+patient1name;patient1surname;11111111111;PICU;11
+patient3name;patient3surname;33333333333;PICU;31
+patient4name;patient4surname;44444444444;BURN WARD;67
+patient5name;patient5surname;55555555555;BURN WARD;13
+patient6name;patient6surname;66666666666;GENERAL WARD;92
