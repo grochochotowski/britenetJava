@@ -1,22 +1,24 @@
 import java.io.File;
-import java.sql.Array;
+import java.io.FileNotFoundException;
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
 
         // patients
 
         ArrayList<Patient> patients = new ArrayList<>();
-        Scanner scan = new Scanner(System.in);
-        File file = new File("./newpatients.txt");
+        File file = new File("newpatients.txt");
+        Scanner scan = new Scanner(file);
 
         while (scan.hasNextLine()) {
             String line = scan.nextLine();
+            System.out.println(line);
             String[] lineSplit = line.split(";");
             Patient newPatient = new Patient(lineSplit[0], lineSplit[1], lineSplit[2], lineSplit[3], 0, Integer.parseInt(lineSplit[4]));
             patients.add(newPatient);
         }
+        scan.close();
 
         Random random = new Random();
         for (Patient patient : patients) {
