@@ -1,6 +1,8 @@
 import java.io.File;
 import java.sql.Array;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Main {
@@ -21,6 +23,18 @@ public class Main {
 
         for (Patient patient : patients) patient.display();
 
+        patients.sort(new Comparator<Patient>() {
+            @Override
+            public int compare(Patient p1, Patient p2) {
+                // Compare by name first
+                int nameComparison = p1.getName().compareTo(p2.getName());
+                if (nameComparison != 0) {
+                    return nameComparison;
+                }
 
+                // If names are equal, compare by surname
+                return p1.getSurname().compareTo(p2.getSurname());
+            }
+        });
     }
 }
