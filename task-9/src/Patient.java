@@ -73,5 +73,7 @@ public class Patient {
         this.daysStaying += 1;
     }
 
-
+    public boolean checkWard(String ward) {
+        return ward.equals(this.wardName);
+    }
 }
