@@ -66,4 +66,8 @@ public class Patient {
     public boolean isHigher(int days) {
         return days > this.daysStaying;
     }
+
+    public void addXtraDay() {
+        this.daysStaying += 1;
+    }
 }
