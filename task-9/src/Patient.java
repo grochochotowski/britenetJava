@@ -76,4 +76,18 @@ public class Patient {
     public boolean checkWard(String ward) {
         return ward.equals(this.wardName);
     }
+
+    @Override
+    public String toString() {
+        return "Patient{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", PESEL='" + PESEL + '\'' +
+                ", wardName='" + wardName + '\'' +
+                ", daysStaying=" + daysStaying +
+                ", age=" + age +
+                '}';
+    }
+
+    
 }
