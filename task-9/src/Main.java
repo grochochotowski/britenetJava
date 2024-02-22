@@ -1,9 +1,6 @@
 import java.io.File;
 import java.sql.Array;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,8 +18,9 @@ public class Main {
             patients.add(newPatient);
         }
 
+        Random random = new Random();
         for (Patient patient : patients) {
-            int newDays = random pls
+            int newDays = random.nextInt(10) + 1;
             patient.setDaysStaying(newDays);
         }
         for (Patient patient : patients) patient.display();
