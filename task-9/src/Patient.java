@@ -63,5 +63,7 @@ public class Patient {
         this.age = age;
     }
 
-    
+    public boolean isHigher(int days) {
+        return days > this.daysStaying;
+    }
 }
