@@ -1,0 +1,3 @@
+patient1name;patient1surname;11111111111;PICU;11
+patient2name;patient2surname;22222222222;BURN WARD;21
+patient3name;patient3surname;33333333333;GENERAL WARD;31
