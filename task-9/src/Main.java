@@ -36,5 +36,9 @@ public class Main {
                 return p1.getSurname().compareTo(p2.getSurname());
             }
         });
+
+        for (Patient patient : patients) patient.display();
+
+        
     }
 }
