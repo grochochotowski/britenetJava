@@ -63,4 +63,8 @@ public class Hospital {
         }
         return count;
     }
+
+    public void addPatient(Patient patient) {
+        patients.add(patient);
+    }
 }
