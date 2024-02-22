@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
 
         // patients
-
+        System.out.println("PATIENTS");
         ArrayList<Patient> patients = new ArrayList<>();
         File file = new File("C:\\nonSystem\\IT\\Code\\britenetJava\\task-9\\src\\newpatients.txt");
         Scanner scan = new Scanner(file);
@@ -52,5 +52,14 @@ public class Main {
         patients.sort(Comparator.comparingInt(Patient::getAge));
         System.out.println(" \n\nSort by age:");
         for (Patient patient : patients) patient.display();
+
+
+        // hospital
+        System.out.println("\n\n\n\nHOSPITAL");
+        Hospital hospital = new Hospital(10, patients);
+        hospital.display();
+        System.out.println(hospital.returnAverageStayedDays());
+        System.out.println(hospital.returnHowManyOlder(65));
+
     }
 }
