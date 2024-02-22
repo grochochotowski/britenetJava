@@ -25,7 +25,6 @@ public class Main {
             int newDays = random pls
             patient.setDaysStaying(newDays);
         }
-
         for (Patient patient : patients) patient.display();
 
         patients.sort(new Comparator<Patient>() {
@@ -41,9 +40,10 @@ public class Main {
                 return p1.getSurname().compareTo(p2.getSurname());
             }
         });
-
         for (Patient patient : patients) patient.display();
 
         patients.sort(Comparator.comparingInt(Patient::getDaysStaying));
+        for (Patient patient : patients) patient.display();
+
     }
 }
