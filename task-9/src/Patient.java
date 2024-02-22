@@ -89,5 +89,16 @@ public class Patient {
                 '}';
     }
 
-    
+    public void display() {
+        String text =
+                """
+                name: %s
+                surname: %s
+                PESEL: %s
+                wardName= %s
+                daysStaying: %d
+                age: %d
+                """;
+        System.out.printf(text, name, surname, PESEL, wardName, daysStaying, age);
+    }
 }
