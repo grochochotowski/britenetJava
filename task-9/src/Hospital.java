@@ -28,4 +28,10 @@ public class Hospital {
     public void setPatients(ArrayList<Patient> patients) {
         this.patients = patients;
     }
+
+    // methods
+    public void display() {
+        System.out.printf("%d/%d patients", patients.size(), maxPatients);
+    }
+
 }
