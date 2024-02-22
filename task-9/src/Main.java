@@ -58,7 +58,7 @@ public class Main {
         System.out.println("\n\n\n\nHOSPITAL");
         Hospital hospital = new Hospital(10, patients);
         hospital.display();
-        System.out.println(hospital.returnAverageStayedDays());
+        System.out.println("\n" + hospital.returnAverageStayedDays());
         System.out.println(hospital.returnHowManyOlder(65));
 
     }
