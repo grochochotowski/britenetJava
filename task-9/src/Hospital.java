@@ -1,4 +1,6 @@
+import java.util.ArrayList;
+
 public class Hospital {
     private int maxPatients;
-    private List<Patient> patients;
+    private ArrayList<Patient> patients;
 }
