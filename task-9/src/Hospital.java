@@ -40,4 +40,20 @@ public class Hospital {
         }
     }
 
+    public int returnAverageStayedDays() {
+        int sum = 0;
+        for (Patient patient : patients) {
+            sum += patient.getDaysStaying();
+        }
+        return sum/patients.size();
+    }
+
+    public int reurnMaxDaysStayed() {
+        int max = 0;
+        for (Patient patient : patients) {
+            if (max < patient.getDaysStaying()) max = patient.getDaysStaying();
+        }
+        return max;
+    }
+
 }
