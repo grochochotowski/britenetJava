@@ -45,5 +45,7 @@ public class Main {
         patients.sort(Comparator.comparingInt(Patient::getDaysStaying));
         for (Patient patient : patients) patient.display();
 
+        patients.sort(Comparator.comparingInt(Patient::getAge));
+        for (Patient patient : patients) patient.display();
     }
 }
