@@ -48,7 +48,7 @@ public class Hospital {
         return sum/patients.size();
     }
 
-    public int reurnMaxDaysStayed() {
+    public int returnMaxDaysStayed() {
         int max = 0;
         for (Patient patient : patients) {
             if (max < patient.getDaysStaying()) max = patient.getDaysStaying();
@@ -56,4 +56,11 @@ public class Hospital {
         return max;
     }
 
+    public int returnHowManyOlder(int age) {
+        int count = 0;
+        for (Patient patient : patients) {
+            if (patient.getAge() > age) count += 1;
+        }
+        return count;
+    }
 }
