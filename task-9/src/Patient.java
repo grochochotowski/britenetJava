@@ -97,7 +97,7 @@ public class Patient {
                 PESEL: %s
                 wardName= %s
                 daysStaying: %d
-                age: %d
+                age: %d\n
                 """;
         System.out.printf(text, name, surname, PESEL, wardName, daysStaying, age);
     }
