@@ -81,7 +81,8 @@ public class MobilePhone implements TelephoneOperator {
     // override
     @Override
     public void call(int time) {
-
+        if (getOwnerData().isPayment()) talkTime += time;
+        else System.out.println("Unable to make a call. The bill awaits payment");
     }
 
     @Override
