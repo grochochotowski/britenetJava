@@ -77,4 +77,30 @@ public class MobilePhone implements TelephoneOperator {
     public void payBill() {
         ownerData.setPayment(true);
     }
+
+    // override
+    @Override
+    public void call(int time) {
+
+    }
+
+    @Override
+    public void bill() {
+
+    }
+
+    @Override
+    public void newMonth() {
+        
+    }
+
+    @Override
+    public double totalPayment() {
+        return 0;
+    }
+
+    @Override
+    public void talkTimeInHours() {
+
+    }
 }
