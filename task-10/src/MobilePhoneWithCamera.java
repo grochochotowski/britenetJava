@@ -5,5 +5,15 @@ public class MobilePhoneWithCamera extends MobilePhone{
         this.numberMMS = numberMMS;
     }
 
-    
+    public int getNumberMMS() {
+        return numberMMS;
+    }
+
+    public void setNumberMMS(int numberMMS) {
+        this.numberMMS = numberMMS;
+    }
+
+    public void sendPhoto() {
+        numberMMS += 1;
+    }
 }
