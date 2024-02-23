@@ -51,5 +51,8 @@ public class PersonalData {
         this.payment = payment;
     }
 
-
+    // methods
+    public void displayPayment()  {
+        System.out.printf("Bill %s", payment ? "is paid" : "awaits payment");
+    }
 }
