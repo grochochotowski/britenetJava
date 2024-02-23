@@ -73,4 +73,8 @@ public class MobilePhone implements TelephoneOperator {
             System.out.println("Too many SMS - cannot send");
         }
     }
+
+    public void payBill() {
+        ownerData.setPayment(true);
+    }
 }
