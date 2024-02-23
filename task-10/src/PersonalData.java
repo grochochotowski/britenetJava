@@ -55,4 +55,14 @@ public class PersonalData {
     public void displayPayment()  {
         System.out.printf("Bill %s", payment ? "is paid" : "awaits payment");
     }
+
+    public void displayData()  {
+        System.out.println(
+                "name=" + name + '\n' +
+                ", surname=" + surname + '\n' +
+                ", year_of_birth=" + year_of_birth + '\n' +
+                ", phone_number=" + phone_number + '\n' +
+                ", payment=" + payment
+        );
+    }
 }
