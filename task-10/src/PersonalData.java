@@ -5,6 +5,7 @@ public class PersonalData {
     private String phone_number;
     private boolean payment;
 
+    // constructor
     public PersonalData(String name, String surname, int year_of_birth, String phone_number, boolean payment) {
         this.name = name;
         this.surname = surname;
@@ -12,4 +13,43 @@ public class PersonalData {
         this.phone_number = phone_number;
         this.payment = payment;
     }
+
+    // getters and setters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public int getYear_of_birth() {
+        return year_of_birth;
+    }
+
+    public String getPhone_number() {
+        return phone_number;
+    }
+
+    public void setPhone_number(String phone_number) {
+        this.phone_number = phone_number;
+    }
+
+    public boolean isPayment() {
+        return payment;
+    }
+
+    public void setPayment(boolean payment) {
+        this.payment = payment;
+    }
+
+
 }
