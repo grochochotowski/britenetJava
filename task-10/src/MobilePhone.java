@@ -59,4 +59,18 @@ public class MobilePhone implements TelephoneOperator {
         );
         ownerData.displayData();
     }
+
+    public void sendSMS(int no) {
+        if (no <= 6) {
+            if (ownerData.isPayment()) {
+                this.numberSMS += no;
+            }
+            else {
+                System.out.println("Unable to send SMS. The bill awaits payment.");
+            }
+        }
+        else {
+            System.out.println("Too many SMS - cannot send");
+        }
+    }
 }
