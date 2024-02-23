@@ -91,7 +91,8 @@ public class MobilePhone implements TelephoneOperator {
 
     @Override
     public void newMonth() {
-        
+        this.talkTime = 0;
+        this.numberSMS = 0;
     }
 
     @Override
