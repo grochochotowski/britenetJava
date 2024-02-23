@@ -14,4 +14,38 @@ public class MobilePhone implements TelephoneOperator {
         this.numberSMS = 0;
         this.ownerData = ownerData;
     }
+
+    // getters
+    public double getPriceMinute() {
+        return priceMinute;
+    }
+
+    public double getPriceSMS() {
+        return priceSMS;
+    }
+
+    public int getTalkTime() {
+        return talkTime;
+    }
+
+    public int getNumberSMS() {
+        return numberSMS;
+    }
+
+    public PersonalData getOwnerData() {
+        return ownerData;
+    }
+
+    // setters
+    public void setPriceMinute(double priceMinute) {
+        this.priceMinute = priceMinute;
+    }
+
+    public void setPriceSMS(double priceSMS) {
+        this.priceSMS = priceSMS;
+    }
+
+    public void setOwnerData(PersonalData ownerData) {
+        this.ownerData = ownerData;
+    }
 }
