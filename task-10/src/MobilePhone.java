@@ -97,7 +97,7 @@ public class MobilePhone implements TelephoneOperator {
 
     @Override
     public double totalPayment() {
-        return 0;
+        return talkTime * priceMinute + numberSMS * priceSMS;
     }
 
     @Override
