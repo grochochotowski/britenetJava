@@ -86,7 +86,9 @@ public class MobilePhone implements TelephoneOperator {
 
     @Override
     public void bill() {
-
+        System.out.println(totalPayment());
+        newMonth();
+        ownerData.setPayment(false);
     }
 
     @Override
