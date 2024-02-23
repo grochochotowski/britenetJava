@@ -48,4 +48,15 @@ public class MobilePhone implements TelephoneOperator {
     public void setOwnerData(PersonalData ownerData) {
         this.ownerData = ownerData;
     }
+
+    public void display() {
+        System.out.println(
+            "priceMinute=" + priceMinute + '\n' +
+             ", priceSMS=" + priceSMS + '\n' +
+             ", talkTime=" + talkTime + '\n' +
+             ", numberSMS=" + numberSMS + '\n' +
+             ", ownerData=\n"
+        );
+        ownerData.displayData();
+    }
 }
