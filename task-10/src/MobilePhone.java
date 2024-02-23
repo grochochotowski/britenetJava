@@ -100,7 +100,7 @@ public class MobilePhone implements TelephoneOperator {
 
     @Override
     public double totalPayment() {
-        return talkTime * priceMinute + numberSMS * priceSMS;
+        return ((double)talkTime/60 * priceMinute) + (numberSMS * priceSMS);
     }
 
     @Override
