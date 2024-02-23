@@ -102,6 +102,11 @@ public class MobilePhone implements TelephoneOperator {
 
     @Override
     public void talkTimeInHours() {
-
+        int timeLeft = talkTime;
+        int hours = timeLeft / 3600;
+        timeLeft -= hours * 3600;
+        int minutes = timeLeft / 60;
+        timeLeft -= minutes * 60;
+        System.out.printf("TIME: %d:%d:%d", hours, minutes, timeLeft);
     }
 }
